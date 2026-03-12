@@ -4,7 +4,7 @@ import {
   useIntlDisplayNames,
   usePreferredLocale,
 } from "@keybr/intl";
-import { isPremiumUser, Pages, usePageData } from "@keybr/pages-shared";
+import { Pages } from "@keybr/pages-shared";
 import { Link as StaticLink } from "@keybr/widget";
 import { FormattedMessage, useIntl } from "react-intl";
 import { Link as RouterLink } from "react-router";
@@ -25,7 +25,6 @@ export function SubMenu({ currentPath }: { readonly currentPath: string }) {
       </RouterLink>
       <LocaleSwitcher currentPath={currentPath} />
       <TranslateLink />
-      <RemoveAdsLink />
     </div>
   );
 }
@@ -66,7 +65,7 @@ function GithubLink() {
   const { formatMessage } = useIntl();
   return (
     <StaticLink
-      href="https://github.com/aradzie/keybr.com"
+      href="https://github.com/bfanatic/keybr.com"
       target="github"
       title={formatMessage({
         id: "footer.githubLink.description",
@@ -82,7 +81,7 @@ function TranslateLink() {
   const { formatMessage } = useIntl();
   return (
     <StaticLink
-      href="https://github.com/aradzie/keybr.com/blob/master/docs/translations.md"
+      href="https://github.com/bfanatic/keybr.com/blob/master/docs/translations.md"
       target="github"
       title={formatMessage({
         id: "footer.translateLink.description",
@@ -94,27 +93,6 @@ function TranslateLink() {
         defaultMessage="Translate"
       />
     </StaticLink>
-  );
-}
-
-function RemoveAdsLink() {
-  const { formatMessage } = useIntl();
-  const { publicUser } = usePageData();
-  return (
-    isPremiumUser(publicUser) || (
-      <RouterLink
-        to={Pages.account.path}
-        title={formatMessage({
-          id: "footer.removeAds.description",
-          defaultMessage: "Purchase a premium account to remove ads.",
-        })}
-      >
-        {formatMessage({
-          id: "footer.removeAds.label",
-          defaultMessage: "Remove Ads",
-        })}
-      </RouterLink>
-    )
   );
 }
 
