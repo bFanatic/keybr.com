@@ -5,7 +5,8 @@
       "Bash(xargs grep:*)",
       "Bash(npx tsc:*)",
       "Bash(ls c:/_personal/projects/keybr.com/node_modules/.bin/tsc*)",
-      "Bash(node_modules/.bin/tsc --noEmit --project packages/keybr-pages-browser/tsconfig.json)"
+      "Bash(node_modules/.bin/tsc --noEmit --project packages/keybr-pages-browser/tsconfig.json)",
+      "Bash(grep -r \"Laatst.*actief\\\\|Last.*active\\\\|last.*active\" /c/Projects/Lesgeven.Tools/keybr.com/packages --include=*.ts* --include=*.json)"
     ]
   }
 }

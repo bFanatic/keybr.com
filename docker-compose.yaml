@@ -1,10 +1,26 @@
 services:
   keybr:
     build:
-      dockerfile: ./Dockerfile
+      context: .
+      dockerfile: Dockerfile
     volumes:
-      - /path/to/data_dir:~/.local/state/keybr
-      - /path/to/data_dir/.env:/etc/keybr/env
+      - ./data:/root/.local/state/keybr
+      - ./env:/etc/keybr/env
     ports:
-      - 30044:3000
+      - "30044:3000"
     restart: unless-stopped
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: dashboard.Dockerfile
+    volumes:
+      - ./data:/data:ro
+    environment:
+      - DATA_DIR=/data
+      - PORT=3001
+    ports:
+      - "30045:3001"
+    restart: unless-stopped
+    depends_on:
+      - keybr
