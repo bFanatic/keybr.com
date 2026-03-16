@@ -3,18 +3,15 @@ import { Settings } from "@keybr/settings";
 import { ViewSwitch } from "@keybr/widget";
 import { views } from "./views.tsx";
 
-setDefaultLayout(window.navigator.language);
+setDefaultLayout();
 
-function setDefaultLayout(localeId: string) {
-  const layout = Layout.findLayout(localeId);
-  if (layout != null) {
-    Settings.addDefaults(
-      KeyboardOptions.default()
-        .withLanguage(layout.language)
-        .withLayout(layout)
-        .save(new Settings()),
-    );
-  }
+function setDefaultLayout() {
+  Settings.addDefaults(
+    KeyboardOptions.default()
+      .withLanguage(Layout.NL_BE.language)
+      .withLayout(Layout.NL_BE)
+      .save(new Settings()),
+  );
 }
 
 export function PracticePage() {
