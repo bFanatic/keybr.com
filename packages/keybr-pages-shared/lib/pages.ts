@@ -32,7 +32,7 @@ export namespace Pages {
   const meta: Meta[] = [
     { property: "fb:app_id", content: "545353762151265" },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://www.keybr.com/" },
+    { property: "og:url", content: "https://keybr.bfanatic.be/" },
     { property: "og:site_name", content: "keybr.com - Typing lessons" },
     { property: "og:title", content: "keybr.com - Typing lessons" },
     {
@@ -40,7 +40,7 @@ export namespace Pages {
       content:
         "Teaching the world to type at the speed of thought! Typing lessons that work.",
     },
-    { property: "og:image", content: "https://www.keybr.com/cover.png" },
+    { property: "og:image", content: "https://keybr.bfanatic.be/cover.png" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:site", content: "@keybrcom" },
     { name: "twitter:creator", content: "@keybrcom" },

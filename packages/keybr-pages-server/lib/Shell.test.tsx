@@ -13,7 +13,7 @@ test("render", () => {
     <ManifestContext.Provider value={Manifest.fake}>
       <PageDataContext.Provider
         value={{
-          base: "https://www.keybr.com/",
+          base: "https://keybr.bfanatic.be/",
           locale: "en",
           user: null,
           publicUser: {
@@ -50,7 +50,7 @@ test("render alt", () => {
     <ManifestContext.Provider value={Manifest.fake}>
       <PageDataContext.Provider
         value={{
-          base: "https://www.keybr.com/",
+          base: "https://keybr.bfanatic.be/",
           locale: "en",
           user: null,
           publicUser: {
@@ -88,7 +88,7 @@ test("render for a bot", () => {
     <ManifestContext.Provider value={Manifest.fake}>
       <PageDataContext.Provider
         value={{
-          base: "https://www.keybr.com/",
+          base: "https://keybr.bfanatic.be/",
           locale: "en",
           user: null,
           publicUser: {

@@ -23,7 +23,7 @@ install(create(), global);
 
 function create(): JSDOM {
   const jsdom = new JSDOM(undefined, {
-    url: "https://www.keybr.com/",
+    url: "https://keybr.bfanatic.be/",
     pretendToBeVisual: false, // Disable requestAnimationFrame.
   });
   polyfill(jsdom);

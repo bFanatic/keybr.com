@@ -13,7 +13,7 @@ export class ConfigModule implements Module {
       Env.getPath("PUBLIC_DIR", "/opt/keybr/public"), //
     );
     bind("canonicalUrl").toValue(
-      Env.getString("APP_URL", "https://www.keybr.com/"), //
+      Env.getString("APP_URL", "https://keybr.bfanatic.be/"), //
     );
   }
 }

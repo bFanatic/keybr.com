@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - APP_URL=https://keybr.bfanatic.be/
     volumes:
       - ./data:/root/.local/state/keybr
     ports:

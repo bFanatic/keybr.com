@@ -9,7 +9,7 @@ test("render sign-in fragment", () => {
   const r = render(
     <PageDataContext.Provider
       value={{
-        base: "https://www.keybr.com/",
+        base: "https://keybr.bfanatic.be/",
         locale: "en",
         user: null,
         publicUser: {
@@ -37,7 +37,7 @@ test("render account fragment", () => {
   const r = render(
     <PageDataContext.Provider
       value={{
-        base: "https://www.keybr.com/",
+        base: "https://keybr.bfanatic.be/",
         locale: "en",
         user: {
           id: "xzy",

@@ -1,6 +1,6 @@
 [![CI](https://github.com/aradzie/keybr.com/actions/workflows/ci.yml/badge.svg)](https://github.com/aradzie/keybr.com/actions/workflows/ci.yml)
 
-# [keybr.com](https://www.keybr.com/) is not (just) a typing test
+# [keybr.com](https://keybr.bfanatic.be/) is not (just) a typing test
 
 <p align="center">
     <img src="assets/screenshot.png" alt="screenshot" width="600"/>
