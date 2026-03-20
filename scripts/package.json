@@ -37,5 +37,9 @@
     "webpack": "^5.103.0",
     "webpack-bundle-analyzer": "^5.0.1",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@formatjs/cli-lib": "^8.4.1",
+    "@formatjs/ts-transformer": "^4.4.2"
   }
 }

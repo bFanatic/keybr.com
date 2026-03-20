@@ -7,7 +7,11 @@
       "Bash(ls c:/_personal/projects/keybr.com/node_modules/.bin/tsc*)",
       "Bash(node_modules/.bin/tsc --noEmit --project packages/keybr-pages-browser/tsconfig.json)",
       "Bash(grep -r \"Laatst.*actief\\\\|Last.*active\\\\|last.*active\" /c/Projects/Lesgeven.Tools/keybr.com/packages --include=*.ts* --include=*.json)",
-      "Bash(grep -E '\\\\.\\(ts|js\\)$')"
+      "Bash(grep -E '\\\\.\\(ts|js\\)$')",
+      "Bash(node scripts/translate.js)",
+      "Bash(npm ls:*)",
+      "Bash(node -e \":*)",
+      "Bash(npx webpack:*)"
     ]
   }
 }
