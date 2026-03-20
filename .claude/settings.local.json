@@ -11,7 +11,8 @@
       "Bash(node scripts/translate.js)",
       "Bash(npm ls:*)",
       "Bash(node -e \":*)",
-      "Bash(npx webpack:*)"
+      "Bash(npx webpack:*)",
+      "Bash(python3 -c \":*)"
     ]
   }
 }
