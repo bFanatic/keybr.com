@@ -13,10 +13,14 @@
  *   PUT /api/users/:id/settings   → Instellingen aanpassen
  */
 
-import Database from "better-sqlite3";
-import { createServer } from "node:http";
 import * as fs from "node:fs";
+import {
+  createServer,
+  type IncomingMessage,
+  type ServerResponse,
+} from "node:http";
 import * as path from "node:path";
+import Database from "better-sqlite3"; // eslint-disable-line n/no-extraneous-import
 
 // --- Configuratie ---
 
@@ -73,19 +77,29 @@ class BinaryReader {
 
 // --- Keybr binair formaat parser ---
 
-interface TypingResult {
+type SampleData = {
+  codePoint: number;
+  hits: number;
+  misses: number;
+};
+
+type TypingResult = {
   timestamp: Date;
   timeMs: number;
   length: number;
   errors: number;
-}
+  samples: SampleData[];
+};
 
 function parseStatsFile(filePath: string): TypingResult[] {
   const buffer = fs.readFileSync(filePath);
   if (buffer.length === 0) return [];
 
   const reader = new BinaryReader(
-    buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength),
+    buffer.buffer.slice(
+      buffer.byteOffset,
+      buffer.byteOffset + buffer.byteLength,
+    ),
   );
   const results: TypingResult[] = [];
 
@@ -103,11 +117,13 @@ function parseStatsFile(filePath: string): TypingResult[] {
       const errors = reader.readVLQ();
       const sampleCount = reader.readVLQ();
 
+      const samples: SampleData[] = [];
       for (let i = 0; i < sampleCount; i++) {
-        reader.readVLQ(); // code point
-        reader.readVLQ(); // hits
-        reader.readVLQ(); // misses
-        reader.readVLQ(); // time to type
+        const codePoint = reader.readVLQ();
+        const hits = reader.readVLQ();
+        const misses = reader.readVLQ();
+        reader.readVLQ(); // time to type — niet gebruikt
+        samples.push({ codePoint, hits, misses });
       }
 
       results.push({
@@ -115,6 +131,7 @@ function parseStatsFile(filePath: string): TypingResult[] {
         timeMs,
         length,
         errors,
+        samples,
       });
     }
   } catch {
@@ -146,7 +163,10 @@ const LAYOUT_NAMES: Record<string, string> = {
   "de-de": "QWERTZ (DE)",
 };
 
-function readUserSettings(userId: number): { layout: string; language: string } {
+function readUserSettings(userId: number): {
+  layout: string;
+  language: string;
+} {
   const settingsPath = userPath(SETTINGS_DIR, userId);
   try {
     if (fs.existsSync(settingsPath)) {
@@ -167,16 +187,29 @@ function formatLayout(layoutId: string): string {
   return LAYOUT_NAMES[layoutId] || layoutId;
 }
 
+function formatChar(cp: number): string {
+  if (cp === 32) return "spatie";
+  if (cp === 9) return "tab";
+  return String.fromCodePoint(cp);
+}
+
+function localDateKey(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${dd}`;
+}
+
 // --- Data ophalen ---
 
-interface UserRow {
+type UserRow = {
   id: number;
   email: string | null;
   name: string | null;
   created_at: string;
-}
+};
 
-interface UserSummary {
+type UserSummary = {
   id: number;
   naam: string;
   email: string;
@@ -187,13 +220,20 @@ interface UserSummary {
   gemCPM: number;
   gemNauwkeurigheid: number;
   laatstActief: string;
-}
+  aantalKarakters: number;
+  nieuwsteKarakter: string;
+  probleemLetter: string;
+  streak: number;
+  actieveDagen: number;
+};
 
 function getSummaries(): UserSummary[] {
   if (!fs.existsSync(DB_PATH)) return [];
 
   const db = new Database(DB_PATH, { readonly: true });
-  const users = db.prepare("SELECT id, email, name, created_at FROM User").all() as UserRow[];
+  const users = db
+    .prepare("SELECT id, email, name, created_at FROM User")
+    .all() as UserRow[];
   const summaries: UserSummary[] = [];
 
   for (const user of users) {
@@ -217,6 +257,11 @@ function getSummaries(): UserSummary[] {
         gemCPM: 0,
         gemNauwkeurigheid: 0,
         laatstActief: "-",
+        aantalKarakters: 0,
+        nieuwsteKarakter: "-",
+        probleemLetter: "-",
+        streak: 0,
+        actieveDagen: 0,
       });
       continue;
     }
@@ -228,6 +273,72 @@ function getSummaries(): UserSummary[] {
       r.timestamp > latest.timestamp ? r : latest,
     );
 
+    // Per-codepoint aggregatie: hits, misses, eerste verschijning
+    const cpStats = new Map<
+      number,
+      { hits: number; misses: number; firstSeen: Date }
+    >();
+    const dagen = new Set<string>();
+    for (const r of results) {
+      dagen.add(localDateKey(r.timestamp));
+      for (const s of r.samples) {
+        const existing = cpStats.get(s.codePoint);
+        if (existing) {
+          existing.hits += s.hits;
+          existing.misses += s.misses;
+          if (r.timestamp < existing.firstSeen)
+            existing.firstSeen = r.timestamp;
+        } else {
+          cpStats.set(s.codePoint, {
+            hits: s.hits,
+            misses: s.misses,
+            firstSeen: r.timestamp,
+          });
+        }
+      }
+    }
+
+    // Nieuwste karakter = codepoint met de meest recente eerste verschijning
+    let nieuwsteCp = -1;
+    let nieuwsteDate = new Date(0);
+    for (const [cp, stat] of cpStats) {
+      if (stat.firstSeen > nieuwsteDate) {
+        nieuwsteDate = stat.firstSeen;
+        nieuwsteCp = cp;
+      }
+    }
+
+    // Probleemletter = hoogste miss-ratio met minimaal 10 aanslagen
+    const MIN_AANSLAGEN = 10;
+    let probleemCp = -1;
+    let probleemRatio = 0;
+    let probleemPct = 0;
+    for (const [cp, stat] of cpStats) {
+      const totaal = stat.hits + stat.misses;
+      if (totaal < MIN_AANSLAGEN) continue;
+      const ratio = stat.misses / totaal;
+      if (ratio > probleemRatio) {
+        probleemRatio = ratio;
+        probleemPct = Math.round(ratio * 100);
+        probleemCp = cp;
+      }
+    }
+
+    // Streak: tel opeenvolgende dagen terug vanaf laatste actieve dag,
+    // mits die vandaag of gisteren is (anders is de reeks gebroken)
+    const vandaagKey = localDateKey(new Date());
+    const gisterenKey = localDateKey(new Date(Date.now() - 86400000));
+    const sortedDagen = Array.from(dagen).sort();
+    const laatsteDag = sortedDagen[sortedDagen.length - 1];
+    let streak = 0;
+    if (laatsteDag === vandaagKey || laatsteDag === gisterenKey) {
+      const cursor = new Date(laatsteDag + "T12:00:00");
+      while (dagen.has(localDateKey(cursor))) {
+        streak++;
+        cursor.setDate(cursor.getDate() - 1);
+      }
+    }
+
     summaries.push({
       id: user.id,
       naam: user.name || "(anoniem)",
@@ -236,12 +347,21 @@ function getSummaries(): UserSummary[] {
       taal: settings.language,
       sessies: results.length,
       totaleMinuten: Math.round((totaleMs / 60000) * 10) / 10,
-      gemCPM: totaleMs > 0 ? Math.round((totaleKarakters / totaleMs) * 60000) : 0,
+      gemCPM:
+        totaleMs > 0 ? Math.round((totaleKarakters / totaleMs) * 60000) : 0,
       gemNauwkeurigheid:
         totaleKarakters > 0
-          ? Math.round(((totaleKarakters - totaleErrors) / totaleKarakters) * 100)
+          ? Math.round(
+              ((totaleKarakters - totaleErrors) / totaleKarakters) * 100,
+            )
           : 0,
       laatstActief: laatsteResult.timestamp.toLocaleDateString("nl-BE"),
+      aantalKarakters: cpStats.size,
+      nieuwsteKarakter: nieuwsteCp >= 0 ? formatChar(nieuwsteCp) : "-",
+      probleemLetter:
+        probleemCp >= 0 ? `${formatChar(probleemCp)} (${probleemPct}%)` : "-",
+      streak,
+      actieveDagen: dagen.size,
     });
   }
 
@@ -262,6 +382,11 @@ function generateHtml(summaries: UserSummary[]): string {
           <td class="num">${s.totaleMinuten}</td>
           <td class="num">${s.gemCPM}</td>
           <td class="num">${s.gemNauwkeurigheid}%</td>
+          <td class="num">${s.aantalKarakters}</td>
+          <td class="char">${esc(s.nieuwsteKarakter)}</td>
+          <td>${esc(s.probleemLetter)}</td>
+          <td class="num">${s.streak}</td>
+          <td class="num">${s.actieveDagen}</td>
           <td>${s.laatstActief}</td>
         </tr>`,
     )
@@ -277,7 +402,7 @@ function generateHtml(summaries: UserSummary[]): string {
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      max-width: 960px;
+      max-width: 1280px;
       margin: 2rem auto;
       padding: 0 1rem;
       color: #1a1a1a;
@@ -288,12 +413,13 @@ function generateHtml(summaries: UserSummary[]): string {
     .refresh { color: #0066cc; text-decoration: none; margin-left: 1rem; }
     .refresh:hover { text-decoration: underline; }
     table { border-collapse: collapse; width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #eee; }
-    th { background: #f5f5f5; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; color: #555; }
-    td { font-size: 0.95rem; }
+    th, td { padding: 0.65rem 0.75rem; text-align: left; border-bottom: 1px solid #eee; }
+    th { background: #f5f5f5; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; color: #555; }
+    td { font-size: 0.92rem; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #f9f9f9; }
     .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .char { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600; text-align: center; }
     .geen { color: #999; }
     .footer { margin-top: 1rem; color: #999; font-size: 0.8rem; }
   </style>
@@ -315,10 +441,15 @@ function generateHtml(summaries: UserSummary[]): string {
         <th class="num">Minuten</th>
         <th class="num">CPM</th>
         <th class="num">Nauwkeurigheid</th>
+        <th class="num" title="Aantal unieke karakters dat de leerling al heeft geoefend">Karakters</th>
+        <th title="Karakter dat het meest recent voor het eerst werd geoefend">Nieuwste</th>
+        <th title="Karakter met de hoogste foutmarge (min. 10 aanslagen)">Probleem</th>
+        <th class="num" title="Aantal opeenvolgende dagen geoefend t.e.m. vandaag of gisteren">Streak</th>
+        <th class="num" title="Totaal aantal verschillende dagen waarop de leerling oefende">Dagen</th>
         <th>Laatst actief</th>
       </tr>
     </thead>
-    <tbody>${rows || '<tr><td colspan="7" class="geen">Nog geen leerlingen gevonden. Wacht tot ze een account aanmaken en beginnen typen.</td></tr>'}
+    <tbody>${rows || '<tr><td colspan="12" class="geen">Nog geen leerlingen gevonden. Wacht tot ze een account aanmaken en beginnen typen.</td></tr>'}
     </tbody>
   </table>
   <p class="footer">CPM = karakters per minuut. Data wordt live gelezen bij elke paginalading.</p>
@@ -327,7 +458,11 @@ function generateHtml(summaries: UserSummary[]): string {
 }
 
 function esc(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 // --- Admin: gebruikersbeheer ---
@@ -345,10 +480,18 @@ function createUser(name: string): { id: number; name: string; email: string } {
     if (existing) throw new Error(`Leerling "${name}" bestaat al`);
     // Controleer of email al bestaat, voeg nummer toe indien nodig
     let finalEmail = email;
-    for (let i = 1; db.prepare("SELECT id FROM user WHERE email = ?").get(finalEmail); i++) {
+    for (
+      let i = 1;
+      db.prepare("SELECT id FROM user WHERE email = ?").get(finalEmail);
+      i++
+    ) {
       finalEmail = email.replace("@local", `${i}@local`);
     }
-    const result = db.prepare("INSERT INTO user (email, name, created_at) VALUES (?, ?, datetime('now'))").run(finalEmail, name);
+    const result = db
+      .prepare(
+        "INSERT INTO user (email, name, created_at) VALUES (?, ?, datetime('now'))",
+      )
+      .run(finalEmail, name);
     return { id: result.lastInsertRowid as number, name, email: finalEmail };
   } finally {
     db.close();
@@ -367,13 +510,25 @@ function deleteUser(userId: number): void {
   }
   // Verwijder settings-bestand
   const settingsPath = userPath(SETTINGS_DIR, userId);
-  try { fs.unlinkSync(settingsPath); } catch {}
+  try {
+    fs.unlinkSync(settingsPath);
+  } catch {
+    /* negeer als bestand niet bestaat */
+  }
   // Verwijder stats-bestand
   const statsPath = userPath(STATS_DIR, userId);
-  try { fs.unlinkSync(statsPath); } catch {}
+  try {
+    fs.unlinkSync(statsPath);
+  } catch {
+    /* negeer als bestand niet bestaat */
+  }
 }
 
-function writeUserSettings(userId: number, layout: string, language: string): void {
+function writeUserSettings(
+  userId: number,
+  layout: string,
+  language: string,
+): void {
   const settingsPath = userPath(SETTINGS_DIR, userId);
   // Lees bestaande settings of begin met leeg object
   let settings: Record<string, unknown> = {};
@@ -381,7 +536,9 @@ function writeUserSettings(userId: number, layout: string, language: string): vo
     if (fs.existsSync(settingsPath)) {
       settings = JSON.parse(fs.readFileSync(settingsPath, "utf-8"));
     }
-  } catch {}
+  } catch {
+    /* negeer corrupte settings, herschrijf vanaf leeg */
+  }
   settings["keyboard.layout"] = layout;
   settings["keyboard.language"] = language;
   // Maak directories aan indien nodig
@@ -616,7 +773,7 @@ function generateAdminHtml(summaries: UserSummary[]): string {
 
 // --- Beveiliging (cookie-gebaseerd) ---
 
-function parseCookies(req: import("node:http").IncomingMessage): Record<string, string> {
+function parseCookies(req: IncomingMessage): Record<string, string> {
   const cookies: Record<string, string> = {};
   for (const part of (req.headers.cookie || "").split(";")) {
     const [k, ...v] = part.trim().split("=");
@@ -625,7 +782,7 @@ function parseCookies(req: import("node:http").IncomingMessage): Record<string, 
   return cookies;
 }
 
-function checkAdminCode(req: import("node:http").IncomingMessage): boolean {
+function checkAdminCode(req: IncomingMessage): boolean {
   if (!ADMIN_CODE) return true;
   // Check header (API calls)
   if (req.headers["x-admin-code"] === ADMIN_CODE) return true;
@@ -636,20 +793,25 @@ function checkAdminCode(req: import("node:http").IncomingMessage): boolean {
   return url.searchParams.get("code") === ADMIN_CODE;
 }
 
-function setAuthCookie(res: import("node:http").ServerResponse): void {
+function setAuthCookie(res: ServerResponse): void {
   // Cookie geldig voor 24 uur, alleen via HTTP
-  res.setHeader("Set-Cookie", `dashboard_code=${encodeURIComponent(ADMIN_CODE)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=86400`);
+  res.setHeader(
+    "Set-Cookie",
+    `dashboard_code=${encodeURIComponent(ADMIN_CODE)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=86400`,
+  );
 }
 
-function sendJson(res: import("node:http").ServerResponse, status: number, data: unknown): void {
+function sendJson(res: ServerResponse, status: number, data: unknown): void {
   res.writeHead(status, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(data));
 }
 
-function readBody(req: import("node:http").IncomingMessage): Promise<string> {
+function readBody(req: IncomingMessage): Promise<string> {
   return new Promise((resolve, reject) => {
     let body = "";
-    req.on("data", (chunk: Buffer) => { body += chunk.toString(); });
+    req.on("data", (chunk: Buffer) => {
+      body += chunk.toString();
+    });
     req.on("end", () => resolve(body));
     req.on("error", reject);
   });
@@ -702,7 +864,10 @@ const server = createServer(async (req, res) => {
     try {
       const body = JSON.parse(await readBody(req));
       const name = (body.name || "").trim();
-      if (!name) { sendJson(res, 400, { error: "Naam is verplicht" }); return; }
+      if (!name) {
+        sendJson(res, 400, { error: "Naam is verplicht" });
+        return;
+      }
       const user = createUser(name);
       // Stel meteen keyboard-instellingen in
       if (body.layout && body.language) {
@@ -734,7 +899,10 @@ const server = createServer(async (req, res) => {
     try {
       const userId = parseInt(settingsMatch[1], 10);
       const body = JSON.parse(await readBody(req));
-      if (!body.layout || !body.language) { sendJson(res, 400, { error: "Layout en taal zijn verplicht" }); return; }
+      if (!body.layout || !body.language) {
+        sendJson(res, 400, { error: "Layout en taal zijn verplicht" });
+        return;
+      }
       writeUserSettings(userId, body.layout, body.language);
       sendJson(res, 200, { message: "Instellingen opgeslagen" });
     } catch (err: any) {
@@ -798,5 +966,8 @@ function generateLoginHtml(): string {
 server.listen(PORT, () => {
   console.log(`Dashboard draait op http://localhost:${PORT}`);
   console.log(`Admin: http://localhost:${PORT}/admin`);
-  if (!ADMIN_CODE) console.warn("WAARSCHUWING: Geen ADMIN_CODE ingesteld — admin is onbeveiligd!");
+  if (!ADMIN_CODE)
+    console.warn(
+      "WAARSCHUWING: Geen ADMIN_CODE ingesteld — admin is onbeveiligd!",
+    );
 });
