@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nem sikerült elküldeni az e-mailt erre: <strong>{email}</strong> az email-címre {message}",
   "account.emailState.sendingText": "A bejelentkezési linket tartalmazó e-mail küldése a(z) <strong>{email}</strong> címre. Kérjük, várjon...",
   "account.emailState.sentText": "A bejelentkezési linket tartalmazó e-mailt a(z) <strong>{email}</strong> címre elküldtük. Az e-mail hamarosan megérkezik, kérjük, egy-két percen belül ellenőrizze a postaládáját.",
-  "account.signInPage.description": "<p>Hozzon létre egy fiókot a gépelési adatai szervereinken történő tárolására. Ez lehetővé teszi számára, hogy bármely számítógépről vagy böngészőből elérhesse a fiókját. Ha nincs fiókja, akkor a gépelési adatait helyben tároljuk, és csak a jelenlegi számítógépéről érheti el.</p><p>Nem tárolunk jelszavakat. Ehelyett egy harmadik fél szolgáltatásait használjuk felhasználóink azonosításához. Több kényelmes módot kínálunk a fiók létrehozására és az abba történő bejelentkezésre.</p><p>Bármikor törölheti a fiókját. Egy fiók törlése épp olyan egyszerű, mint amilyen a létrehozása.</p>",
   "account.socialForm.description": "Jelentkezzen be az ön által preferált közösségi oldallal. Ígérjük hogy tiszteletben tartjuk a magánéletét, illetve sohasem fogunk kéretlen tartalmat küldeni az ön e-mail címére és nem fogunk posztolni az ön közösségi oldalára, sem barátai oldalára.",
   "footer.discordLink.description": "Beszélgessetek a Discordunkon.",
   "footer.emailLink.description": "Küldje el észrevételeit és javaslatait a info@keybr.com címre",

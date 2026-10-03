@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Kunne ikke sende e-post til <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Sender en e-post med innloggingslenke til <strong>{email}</strong>... Vennligst vent litt.",
   "account.emailState.sentText": "Vi har sendt en e-post med påloggingslenken til <strong>{email}</strong>. Den bør komme snart, vennligst sjekk innboksen din om et minutt eller to.",
-  "account.signInPage.description": "<p>Opprett en konto for å lagre skrivedataene dine i skyen. Dette gir deg muligheten til å få tilgang til profilen din fra hvilken som helst datamaskin eller nettleser. Hvis du ikke oppretter en konto, vil skrivedataene dine bli lagret lokalt og kun være tilgjengelig fra den datamaskinen du bruker nå.</p><p>Vi lagrer ikke passord. I stedet bruker vi tredjepartstjenester for å autentisere brukerne våre. Vi tilbyr flere enkle måter å opprette en konto og logge inn på.</p><p>Du kan når som helst velge å melde deg ut. Å slette en konto er like enkelt som å opprette en.</p>",
   "account.socialForm.description": "Logg inn med ditt foretrukne sosiale nettverk. Vi respekterer personvernet ditt og lover å aldri spamme veggen din, vennene dine eller e-posten din.",
   "footer.discordLink.description": "Diskuter på vår Discord-server.",
   "footer.emailLink.description": "Send dine kommentarer og forslag til info@keybr.no",

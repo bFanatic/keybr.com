@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Não foi possível enviar o email para <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Enviando email com link de login para <strong>{email}</strong>... Por favor, aguarde um momento.",
   "account.emailState.sentText": "Nós enviamos um email com o link de login para <strong>{email}</strong>. Deve chegar em breve, verifique sua caixa de entrada dentro de um minuto ou dois.",
-  "account.signInPage.description": "<p>Crie uma conta para salvar os dados da suas digitações nos nossos servidores na nuvem. Isso permite que você acesso seu perfil de qualquer computador. Se você não criar uma conta seus dados são só acessíveis no seu computador.</p><p>Nós não salvamos nenhuma senha. Ao invés usamos serviços externos para autenticar nossos usuários. Nós oferecemos muitas formas convenientes de criar uma conta e se logar.</p><p>Você pode opt-out a qualquer momento. Deletando uma conta ou simplesmente criando uma nova.</p>",
   "account.socialForm.description": "Faça login com sua rede social preferida. Respeitamos sua privacidade e prometemos nunca enviar spam para seu mural, amigos ou e-mail.",
   "footer.discordLink.description": "Discuta em nosso servidor Discord.",
   "footer.emailLink.description": "Envie seus comentários e sugestões para info@keybr.com",

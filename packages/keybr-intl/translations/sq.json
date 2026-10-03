@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nuk mund të dërgohej e-mail te <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Duke dërguar një e-mail me linkun e hyrjes te <strong>{email}</strong>... Ju lutem prisni një moment.",
   "account.emailState.sentText": "Ne kemi dërguar një e-mail me linkun e hyrjes te <strong>{email}</strong>. Duhet të mbërrijë së shpejti, ju lutem kontrolloni kutinë tuaj të postës brenda një ose dy minutash.",
-  "account.signInPage.description": "<p>Krijoni një llogari për të ruajtur të dhënat tuaja të shkrimit në serverët tanë në cloud. Kjo ju lejon të aksesoni profilin tuaj nga çdo kompjuter ose shfletues. Nëse nuk keni një llogari, të dhënat tuaja të shkrimit ruhen lokalisht dhe janë të aksesueshme vetëm nga kompjuteri juaj aktual.</p><p>Ne nuk ruajmë fjalëkalime. Në vend të kësaj, përdorim shërbime të palëve të treta për të autentikuar përdoruesit tanë. Ne ofrojmë disa mënyra të përshtatshme për të krijuar një llogari dhe për t’u identifikuar.</p><p>Mund të hiqni dorë në çdo kohë. Fshirja e një llogarie është po aq e thjeshtë sa krijimi i saj.</p>",
   "account.socialForm.description": "Hyni me rrjetin tuaj social të preferuar. Ne respektojmë privatësinë tuaj dhe premtojmë se nuk do të dërgojmë kurrë mesazhe spam në murin tuaj, tek miqtë tuaj, ose në e-mailin tuaj.",
   "footer.discordLink.description": "Diskutoni në serverin tonë në Discord.",
   "footer.emailLink.description": "Dërgoni komentet dhe sugjerimet tuaja te info@keybr.com",

@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Tidak dapat mengirim email ke <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Mengirim email dengan tautan masuk ke <strong>{email}</strong>... Mohon tunggu sebentar.",
   "account.emailState.sentText": "Kami telah mengirimkan email berisi tautan login ke <strong>{email}</strong>. Email tersebut akan segera tiba, silakan periksa kotak masuk Anda dalam satu atau dua menit.",
-  "account.signInPage.description": "<p>Buat sebuah akun untuk menyimpan data anda pada server kami di cloud. Ini memungkinkan anda untuk mengakses profil anda dari komputer atau browser manapun. jika anda belum memiliki akun, maka data anda hanya disimpan di browser lokal saja dan hanya bisa diakses oleh komputer ini.</p><p>Kami tidak akan menyimpan password. Tetapi kami memakai layanan pihak ketiga untuk mengelola data pengguna kami. Kami menawarkan beberapa cara mudah untuk membuat akun dan untuk masuk.</p><p>Anda bisa menghapus akun anda kapan saja. Menghapus akun anda sama mudahnya dengan membuatnya.</p>",
   "account.socialForm.description": "Masuk menggunakan media sosial pilihan Anda. Kami menghormati privasi Anda dan berjanji tidak akan mengirim spam ke dinding, teman, atau email Anda.",
   "footer.discordLink.description": "Diskusikan di server Discord kami.",
   "footer.emailLink.description": "Kirim komentar dan saran Anda ke info@keybr.com",

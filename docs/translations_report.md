@@ -6,9 +6,9 @@ Untranslated: 0 messages, 0 words
 
 # Afrikaans
 
-Translated: 326 messages, 4413 words
+Translated: 325 messages, 4396 words
 
-Untranslated: 8 messages, 48 words
+Untranslated: 9 messages, 65 words
 
 * *Letters*
 * *Volume:*
@@ -17,52 +17,56 @@ Untranslated: 8 messages, 48 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Arabic
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Bulgarian
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Bangla
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Catalan
 
-Translated: 297 messages, 3225 words
+Translated: 296 messages, 3208 words
 
-Untranslated: 35 messages, 1214 words
+Untranslated: 36 messages, 1231 words
 
 * *Errors*
 * *Zones:*
@@ -80,17 +84,17 @@ Untranslated: 35 messages, 1214 words
 * *Practice punctuation characters that are specific to a progr...*
 * *This is a histogram of the accuracies of all users, and your...*
 * *Show color coding of the keyboard zones. Use this option to ...*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Generate typing lessons from the text of a book. All keys ar...*
 * *Highlight a key that must to be pressed next. Use this optio...*
 * *<p>This indicator shows the current subset of letters used t...*
-* *Repeat each word a number of times. Type a word for the firs...*
 * ...
 
 # Czech
 
-Translated: 323 messages, 4409 words
+Translated: 322 messages, 4392 words
 
-Untranslated: 11 messages, 52 words
+Untranslated: 12 messages, 69 words
 
 * *Font:*
 * *Reset*
@@ -102,13 +106,14 @@ Untranslated: 11 messages, 52 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Danish
 
-Translated: 318 messages, 4358 words
+Translated: 317 messages, 4341 words
 
-Untranslated: 14 messages, 81 words
+Untranslated: 15 messages, 98 words
 
 * *Score*
 * *Layout*
@@ -122,14 +127,15 @@ Untranslated: 14 messages, 81 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Repeat each word a number of times. Type a word for the firs...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # German
 
-Translated: 326 messages, 4413 words
+Translated: 325 messages, 4396 words
 
-Untranslated: 8 messages, 48 words
+Untranslated: 9 messages, 65 words
 
 * *Inloggen*
 * *Inloggen*
@@ -138,26 +144,28 @@ Untranslated: 8 messages, 48 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Greek
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Esperanto
 
-Translated: 64 messages, 795 words
+Translated: 63 messages, 778 words
 
-Untranslated: 263 messages, 3608 words
+Untranslated: 264 messages, 3625 words
 
 * *GO!*
 * *Copy*
@@ -183,22 +191,23 @@ Untranslated: 263 messages, 3608 words
 
 # Spanish
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Estonian
 
-Translated: 325 messages, 4412 words
+Translated: 324 messages, 4395 words
 
-Untranslated: 9 messages, 49 words
+Untranslated: 10 messages, 66 words
 
 * *GO!*
 * *Font:*
@@ -208,13 +217,14 @@ Untranslated: 9 messages, 49 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Persian
 
-Translated: 274 messages, 2492 words
+Translated: 273 messages, 2475 words
 
-Untranslated: 58 messages, 1947 words
+Untranslated: 59 messages, 1964 words
 
 * *Books*
 * *Zones:*
@@ -240,9 +250,9 @@ Untranslated: 58 messages, 1947 words
 
 # Finnish
 
-Translated: 195 messages, 1953 words
+Translated: 194 messages, 1936 words
 
-Untranslated: 133 messages, 2452 words
+Untranslated: 134 messages, 2469 words
 
 * *GO!*
 * *Time*
@@ -268,9 +278,9 @@ Untranslated: 133 messages, 2452 words
 
 # Faroese
 
-Translated: 31 messages, 252 words
+Translated: 30 messages, 235 words
 
-Untranslated: 295 messages, 4140 words
+Untranslated: 296 messages, 4157 words
 
 * *GO!*
 * *Copy*
@@ -296,9 +306,9 @@ Untranslated: 295 messages, 4140 words
 
 # French
 
-Translated: 320 messages, 4213 words
+Translated: 319 messages, 4196 words
 
-Untranslated: 14 messages, 248 words
+Untranslated: 15 messages, 265 words
 
 * *Zones:*
 * *Options*
@@ -310,6 +320,7 @@ Untranslated: 14 messages, 248 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Above are listed the longest continuous sequences of lessons...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 * *When you focus on a new key, it is very likely that the spee...*
@@ -317,9 +328,9 @@ Untranslated: 14 messages, 248 words
 
 # Irish
 
-Translated: 324 messages, 4404 words
+Translated: 323 messages, 4387 words
 
-Untranslated: 10 messages, 57 words
+Untranslated: 11 messages, 74 words
 
 * *Zones:*
 * *Inloggen*
@@ -330,26 +341,28 @@ Untranslated: 10 messages, 57 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Hebrew
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Croatian
 
-Translated: 324 messages, 4409 words
+Translated: 323 messages, 4392 words
 
-Untranslated: 10 messages, 52 words
+Untranslated: 11 messages, 69 words
 
 * *Font:*
 * *Reset*
@@ -360,26 +373,28 @@ Untranslated: 10 messages, 52 words
 * *Key sounds only*
 * *Premium account price:*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Hungarian
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Indonesian
 
-Translated: 326 messages, 4413 words
+Translated: 325 messages, 4396 words
 
-Untranslated: 8 messages, 48 words
+Untranslated: 9 messages, 65 words
 
 * *GO!*
 * *Volume:*
@@ -388,13 +403,14 @@ Untranslated: 8 messages, 48 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Icelandic
 
-Translated: 82 messages, 1411 words
+Translated: 81 messages, 1394 words
 
-Untranslated: 245 messages, 2992 words
+Untranslated: 246 messages, 3009 words
 
 * *GO!*
 * *Copy*
@@ -420,9 +436,9 @@ Untranslated: 245 messages, 2992 words
 
 # Italian
 
-Translated: 321 messages, 4407 words
+Translated: 320 messages, 4390 words
 
-Untranslated: 12 messages, 52 words
+Untranslated: 13 messages, 69 words
 
 * *Font:*
 * *Layout*
@@ -435,26 +451,28 @@ Untranslated: 12 messages, 52 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Japanese
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Korean
 
-Translated: 132 messages, 966 words
+Translated: 131 messages, 949 words
 
-Untranslated: 200 messages, 3473 words
+Untranslated: 201 messages, 3490 words
 
 * *Copy*
 * *Done*
@@ -480,9 +498,9 @@ Untranslated: 200 messages, 3473 words
 
 # Lithuanian
 
-Translated: 285 messages, 2765 words
+Translated: 284 messages, 2748 words
 
-Untranslated: 46 messages, 1665 words
+Untranslated: 47 messages, 1682 words
 
 * *Inloggen*
 * *Inloggen*
@@ -502,8 +520,8 @@ Untranslated: 46 messages, 1665 words
 * *This is a histogram of the accuracies of all users, and your...*
 * *Adjust the number of words in the lesson text. Making lesson...*
 * *Show color coding of the keyboard zones. Use this option to ...*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Are you sure you want to delete all data and reset your prof...*
-* *You don’t have any accuracy streaks. Consider completing a l...*
 * ...
 
 # Mongolian
@@ -536,9 +554,9 @@ Untranslated: 316 messages, 4220 words
 
 # Norwegian Bokmål
 
-Translated: 145 messages, 2007 words
+Translated: 144 messages, 1990 words
 
-Untranslated: 183 messages, 2399 words
+Untranslated: 184 messages, 2416 words
 
 * *Done*
 * *Help*
@@ -564,22 +582,23 @@ Untranslated: 183 messages, 2399 words
 
 # Nepali
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Dutch
 
-Translated: 321 messages, 4407 words
+Translated: 320 messages, 4390 words
 
-Untranslated: 12 messages, 52 words
+Untranslated: 13 messages, 69 words
 
 * *Score*
 * *Zones:*
@@ -592,26 +611,28 @@ Untranslated: 12 messages, 52 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Polish
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Brazilian Portuguese
 
-Translated: 325 messages, 4412 words
+Translated: 324 messages, 4395 words
 
-Untranslated: 9 messages, 49 words
+Untranslated: 10 messages, 66 words
 
 * *Layout*
 * *Layout:*
@@ -621,13 +642,14 @@ Untranslated: 9 messages, 49 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # European Portuguese
 
-Translated: 305 messages, 4266 words
+Translated: 304 messages, 4249 words
 
-Untranslated: 27 messages, 173 words
+Untranslated: 28 messages, 190 words
 
 * *Books*
 * *Layout*
@@ -681,22 +703,23 @@ Untranslated: 40 messages, 974 words
 
 # Russian
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Slovak
 
-Translated: 327 messages, 4414 words
+Translated: 326 messages, 4397 words
 
-Untranslated: 7 messages, 47 words
+Untranslated: 8 messages, 64 words
 
 * *Syntax:*
 * *Inloggen*
@@ -704,13 +727,14 @@ Untranslated: 7 messages, 47 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Slovenian
 
-Translated: 179 messages, 3188 words
+Translated: 178 messages, 3171 words
 
-Untranslated: 154 messages, 1271 words
+Untranslated: 155 messages, 1288 words
 
 * *Copy*
 * *Done*
@@ -736,9 +760,9 @@ Untranslated: 154 messages, 1271 words
 
 # Albanian
 
-Translated: 30 messages, 353 words
+Translated: 29 messages, 336 words
 
-Untranslated: 296 messages, 4039 words
+Untranslated: 297 messages, 4056 words
 
 * *GO!*
 * *Copy*
@@ -764,9 +788,9 @@ Untranslated: 296 messages, 4039 words
 
 # Swedish
 
-Translated: 325 messages, 4412 words
+Translated: 324 messages, 4395 words
 
-Untranslated: 9 messages, 49 words
+Untranslated: 10 messages, 66 words
 
 * *Layout*
 * *Layout:*
@@ -776,13 +800,14 @@ Untranslated: 9 messages, 49 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Thai
 
-Translated: 316 messages, 4304 words
+Translated: 315 messages, 4287 words
 
-Untranslated: 16 messages, 135 words
+Untranslated: 17 messages, 152 words
 
 * *Zones:*
 * *Inloggen*
@@ -797,15 +822,16 @@ Untranslated: 16 messages, 135 words
 * *Premium account price:*
 * *voornaam.naam (bv. emma.peeters)*
 * *This is a histogram of the accuracies of all users, and your...*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Repeat each word a number of times. Type a word for the firs...*
 * *See how accurate you type relative to other users. The highe...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Turkish
 
-Translated: 214 messages, 1795 words
+Translated: 213 messages, 1778 words
 
-Untranslated: 115 messages, 2611 words
+Untranslated: 116 messages, 2628 words
 
 * *Books*
 * *Font:*
@@ -831,22 +857,23 @@ Untranslated: 115 messages, 2611 words
 
 # Ukrainian
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Vietnamese
 
-Translated: 262 messages, 2414 words
+Translated: 261 messages, 2397 words
 
-Untranslated: 69 messages, 2016 words
+Untranslated: 70 messages, 2033 words
 
 * *Visit*
 * *Typing*
@@ -872,9 +899,9 @@ Untranslated: 69 messages, 2016 words
 
 # Simplified Chinese
 
-Translated: 327 messages, 4408 words
+Translated: 326 messages, 4391 words
 
-Untranslated: 7 messages, 53 words
+Untranslated: 8 messages, 70 words
 
 * *Inloggen*
 * *Inloggen*
@@ -882,26 +909,28 @@ Untranslated: 7 messages, 53 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Traditional Chinese
 
-Translated: 328 messages, 4415 words
+Translated: 327 messages, 4398 words
 
-Untranslated: 6 messages, 46 words
+Untranslated: 7 messages, 63 words
 
 * *Inloggen*
 * *Inloggen*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Chinese (Taiwan)
 
-Translated: 327 messages, 4414 words
+Translated: 326 messages, 4397 words
 
-Untranslated: 7 messages, 47 words
+Untranslated: 8 messages, 64 words
 
 * *GO!*
 * *Inloggen*
@@ -909,4 +938,5 @@ Untranslated: 7 messages, 47 words
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
+* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*

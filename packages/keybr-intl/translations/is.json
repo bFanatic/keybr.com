@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Gat ekki sent tölvupóst til <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Sendi tölvupóst með innskráningartengli á <strong>{email}</strong>... Vinsamlegast bíddu í eina sekúndu.",
   "account.emailState.sentText": "Við höfum sent tölvupóst með innskráningartengli á <strong>{email}</strong>. Það ætti að berast fljótlega, vinsamlegast athugaðu pósthólfið þitt eftir eina eða tvær mínútur.",
-  "account.signInPage.description": "<p>Búðu til aðgang til að geyma innsláttargögnin þín á netþjónum okkar í skýinu. Þetta gerir þér kleift að fá aðgang að prófílnum þínum úr hvaða tölvu eða vafra sem er. Ef þú ert ekki með aðgang eru innsláttargögnin þín geymd á staðnum og eru aðeins aðgengileg frá núverandi tölvu.</p><p>Við geymum engin lykilorð. Þess í stað notum við þjónustu þriðja aðila til að sannvotta notendur okkar. Við bjóðum upp á nokkrar þægilegar leiðir til að búa til reikning og skrá sig inn.</p><p>Þú getur afþakkað hvenær sem er. Að eyða aðgangi er eins einfalt og að búa hann til.</p>",
   "account.socialForm.description": "Skráðu þig inn með samfélagsnetinu sem þú vilt. Við virðum friðhelgi þína og lofum að spamma aldrei vegginn þinn, vini eða tölvupóst.",
   "footer.discordLink.description": "Ræddu á Discord netþjóninum okkar.",
   "footer.emailLink.description": "Sendu athugasemdir þínar og tillögur á info@keybr.com",

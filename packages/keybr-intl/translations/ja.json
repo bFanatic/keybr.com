@@ -5,7 +5,6 @@
   "account.emailState.errorText": "<strong>{email}</strong>にメールを送ることができません: {message}",
   "account.emailState.sendingText": "ログインリンクのメールを<strong>{email}</strong>に送信しています。 少々お待ちください...",
   "account.emailState.sentText": "ログインリンクのメールを<strong>{email}</strong>に送信しました. 届くまで少々お待ちください。",
-  "account.signInPage.description": "<p>クラウドにタイピングデータを保存するためにアカウントを作成します。 どんなコンピュータ、ブラウザからでもプロフィールにアクセスできるようになります。アカウントを作成していない場合、タイピングデータはローカルに保存され、このコンピュータからのみアクセスできます。</p><p>パスワードは一切保存されません。その代わり、サードパーティーのサービスを用いてユーザー認証を行います。新しいアカウント作成やサインインに使える便利な手段をいくつか用意しています。</p><p>いつでも退会できます。アカウントの削除は、アカウント作成と同様に簡単です。</p>",
   "account.socialForm.description": "お好みのSNSアカウントでサインインしてください。私たちはあなたのプライバシーを尊重し、あなたのウォール、友人、メールアドレスにスパム行為をしないことをお約束します。",
   "footer.discordLink.description": "Discordで議論する。",
   "footer.emailLink.description": "コメントや提案があればinfo@keybr.comまでお送りください",

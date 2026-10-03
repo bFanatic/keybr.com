@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nepavyko išsiųsti el. laiško adresu <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Siunčiant el. laišką su prisijungimo nuoroda adresu <strong>{email}</strong>... Palaukite sekundę.",
   "account.emailState.sentText": "Išsiuntėme el. laišką su prisijungimo nuoroda adresu <strong>{email}</strong>. Ji turėtų netrukus pasiekti jus, todėl po minutės ar dviejų patikrinkite savo pašto dėžutę.",
-  "account.signInPage.description": "<p>Susikurkite paskyrą, kad galėtumėte saugoti savo spausdinimo duomenis mūsų serveriuose debesyje. Taip galėsite pasiekti savo profilį iš bet kurio kompiuterio ar naršyklės. Jei paskyros neturite, jūsų spausdinimo duomenys saugomi vietoje ir yra pasiekiami tik iš dabartinio kompiuterio.</p><p>Nesaugome jokių slaptažodžių. Vietoj to naudojame trečiųjų šalių paslaugas, kad autentifikuotume savo naudotojus. Siūlome kelis patogius būdus, kaip sukurti paskyrą ir prisijungti.</p><p>Bet kada galite atsisakyti. Ištrinti paskyrą taip pat paprasta, kaip ir ją susikurti.</p>",
   "account.socialForm.description": "Prisijunkite per pageidaujamą socialinį tinklą. Mes gerbiame jūsų privatumą ir pažadame niekada neskelbti įrašų jūsų sienoje ir nesiųsti nepageidaujamų laiškų jūsų draugams ar el. paštu.",
   "footer.discordLink.description": "Diskutuokite mūsų Discord serveryje.",
   "footer.emailLink.description": "Siųskite savo komentarus ir patarimus į info@keybr.com",

@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Ne povas sendi retafiŝo al <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Sendas retafiŝo kun la ensalutligilo al <strong>{email}</strong>... Bonvolu atendi momenton.",
   "account.emailState.sentText": "Ni sendis retafiŝon kun la ensalutligilo al <strong>{email}</strong>. Ĝi devus alveni baldaŭ, bonvolu kontroli vian enirkeston en kelkajn momentojn.",
-  "account.signInPage.description": "<p>Kreu konton por konservi viajn tajpdatumojn ĉe niaj serviloj en la interreto. Tio permesas al vi aliri vian profilon el iu ajn komputilo aŭ krozilo. Se vi ne posedas konton, viaj tajpdatumoj estas konservitaj loke kaj alireblas nur el via nuna komputilo.</p><p>Ni ne konservas iujn ajn pasvortojn. Anstataŭe ni uzas triajn partiajn servojn por aŭtentikigi niajn uzantojn. Ni ofertas plurajn oportunajn metodojn por krei konton kaj ensaluti.</p><p>Vi povas deregistri iam ajn. Forviŝi konton estas tiel facile kiel krei ĝin.</p>",
   "account.socialForm.description": "Ensaluti per via plej ŝatata socia reto. Ni respektas vian privatecon kaj promesas ke ni neniam spamos vian muron, retpoŝton aŭ viajn amikojn.",
   "footer.discordLink.description": "Diskuti sur nia diskordo-servilo.",
   "footer.emailLink.description": "Sendu viajn komentojn kaj sugestojn al info@keybr.com",

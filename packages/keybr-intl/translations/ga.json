@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Níorbh fhéidir ríomhphost a sheoladh chuig <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Ríomhphost á sheoladh leis an nasc logáil isteach chuig <strong>{email}</strong>... Fan soicind le do thoil.",
   "account.emailState.sentText": "Sheolamar ríomhphost leis an nasc logáil isteach chuig <strong>{email}</strong>. Ba cheart go sroichfidh sé go luath, seiceáil le do thoil do bhosca isteach i gceann nóiméid nó dhó.",
-  "account.signInPage.description": "<p>Cruthaigh cuntas chun do shonraí clóscríofa a stóráil ar ár bhfreastalaithe sa néal. Ligeann sé seo duit rochtain a fháil ar do phróifíl ó aon ríomhaire nó brabhsálaí. Mura bhfuil cuntas agat, stóráiltear do shonraí clóscríofa go háitiúil agus ní féidir rochtain a fháil orthu ach ó do ríomhaire reatha.</p><p>Ní stórálaimid pasfhocail ar bith. Ina áit sin úsáidimid seirbhísí tríú páirtí chun ár n-úsáideoirí a fhíordheimhniú. Cuirimid roinnt bealaí áisiúla ar fáil chun cuntas a chruthú agus síniú isteach.</p><p>Is féidir leat tarraingt as ag am ar bith. Tá scriosadh cuntas chomh simplí le cuntas a chruthú.</p>",
   "account.socialForm.description": "Sínigh isteach leis an líonra sóisialta is fearr leat. Tá meas againn ar do phríobháideachas agus geallaimid nach turscar sinn do bhalla, do chairde ná do r-phost choíche.",
   "footer.discordLink.description": "Déan plé ar ár bhfreastalaí Discord.",
   "footer.emailLink.description": "Seol do thuairimí agus moltaí chuig info@keybr.com",

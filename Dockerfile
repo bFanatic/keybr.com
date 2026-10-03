@@ -2,6 +2,8 @@ FROM node:24
 
 WORKDIR /usr/src/app
 
+# Invalidates the build cache whenever master gets a new commit.
+ADD https://api.github.com/repos/bFanatic/keybr.com/git/refs/heads/master /tmp/version.json
 RUN git clone https://github.com/bFanatic/keybr.com.git .
 RUN npm install
 RUN npm run translate && npm run compile && npm run build

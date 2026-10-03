@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nepodarilo sa odoslať e-mail na <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Odosielame e-mail s linkom na prihlásenie na <strong>{email}</strong>... Počkajte prosím.",
   "account.emailState.sentText": "Odoslali sme e-mail s linkom na prihlásenie na <strong>{email}</strong>. Mal by doraziť čoskoro, skontrolujte si e-mailovú schránku o pár minút.",
-  "account.signInPage.description": "<p>Vytvorte si účet, aby ste mohli ukladať svoje dáta o písaní na našich serveroch v cloude. Týmto spôsobom budete mať prístup k svojmu profilu z akéhokoľvek počítača alebo prehliadača. Ak nemáte účet, vaše dáta o písaní sa ukladajú lokálne a sú prístupné len z vášho súčasného počítača.</p><p>Neskladujeme žiadne heslá. Namiesto toho používame služby tretích strán na autentifikáciu našich používateľov. Ponúkame niekoľko pohodlných spôsobov, ako si vytvoriť účet a prihlásiť sa.</p><p>Môžete sa kedykoľvek odhlásiť. Zmazanie účtu je rovnako jednoduché ako jeho vytvorenie.</p>",
   "account.socialForm.description": "Prihláste sa pomocou svojej preferovanej sociálnej siete. Rešpektujeme vaše súkromie a sľubujeme, že nikdy nebudeme spamovať vašu nástenku, priateľov ani e-mail.",
   "footer.discordLink.description": "Diskutujte na našom Discord serveri.",
   "footer.emailLink.description": "Posielajte vaše komentáre a návrhy na info@keybr.com",

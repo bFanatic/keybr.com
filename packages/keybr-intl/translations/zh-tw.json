@@ -5,7 +5,6 @@
   "account.emailState.errorText": "無法傳送E-mail給 <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "正在傳送包含登入連結的E-mail至<strong>{email}</strong>... 請稍候片刻。",
   "account.emailState.sentText": "我們已經將登入連結發送至 <strong>{email}</strong>。信件應該很快就會到達，請稍候一兩分鐘並檢查您的收件匣。",
-  "account.signInPage.description": "<p>建立帳戶，將您的打字資料儲存在雲端伺服器上。讓您可以從任何電腦或瀏覽器存取您的個人資料。若您沒有帳戶，則您的輸入數據將儲存在本機，僅能在目前的電腦上存取。</p> <p>我們不儲存任何密碼。而是使用第三方服務來驗證使用者身份。我們提供多種便捷方式來建立帳戶並登入。</p> <p>您可以隨時選擇退出。刪除帳戶與建立帳戶一樣簡單。</p>",
   "account.socialForm.description": "使用您偏好的社群帳戶登入。我們尊重您的隱私，絕不會在您的動態牆、好友或電子郵件中發送垃圾訊息。",
   "footer.discordLink.description": "在 Discord 伺服器上一起討論。",
   "footer.emailLink.description": "將您的評論和建議發送至 info@keybr.com",

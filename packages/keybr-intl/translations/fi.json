@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Viestiä ei voitu lähettää osoitteeseen <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Lähetetään kirjautumislinkki osoitteeseen <strong>{email}</strong>... Odota hetki.",
   "account.emailState.sentText": "Kirjautumislinkki lähetetty osoitteeseen <strong>{email}</strong>. Sen pitäisi saapua pian. Tarkista sähköpostisi minuutin tai parin kuluttua.",
-  "account.signInPage.description": "<p>Luo tili tallettaaksesi kirjoitustietosi meidän palvelimellemme. Näin pääset profiiliisi miltä tahansa tietokoneelta tai selaimelta. Jos et käytä tiliä, tietosi on tallennettu vain paikallisesti ja pystyt käyttämään niitä vain tältä tietokoneelta.</p><p>Me emme säilö mitään salasanoja. Sen sijaan käytämme kolmannen osapuolen palveluita todentaakseemme käyttäjämme. Tarjoamme useita eri käytännöllisiä tapoja luoda tilin ja kirjautua sisään.</p><p>Voit lopettaa palvelun käytön milloin vaan. Tilin poistaminen on yhtä helppoa kuin sen tekeminenkin.</p>",
   "account.socialForm.description": "Kirjaudu sisään valitsemallasi sosiaalisella medialla. Kunnioitamme yksityisyyttäsi ja lupaamme olla tukkimatta seinääsi, kavereitasi tai sähköpostiasi.",
   "footer.discordLink.description": "Keskustele Discord-palvelimellamme.",
   "footer.emailLink.description": "Lähetä kommenttisi ja kysymyksesi osoitteeseen info@keybr.com",

@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Không thể gửi e-mail tới <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Đang gửi e-mail với link đăng nhập tới <strong>{email}</strong>... Vui lòng đợi trong giây lát.",
   "account.emailState.sentText": "Chúng tôi đã gừi đường dẫn đăng nhập đến <strong>{email}</strong>. Bạn sẽ sớm nhận được mail thôi, vui lòng kiểm tra hộp thư đến trong vài phút nữa.",
-  "account.signInPage.description": "<p>Tạo một tài khoản để lưu trữ dữ liệu đánh máy của bạn trên máy chủ của chúng tôi trên đám mây. Điều này cho phép bạn truy cập hồ sơ của mình từ bất kỳ máy tính hoặc trình duyệt nào. Nếu bạn không có tài khoản thì dữ liệu đánh máy của bạn sẽ được lưu trữ cục bộ và chỉ có thể truy cập được từ máy tính hiện tại của bạn.</p><p>Chúng tôi không lưu trữ bất kỳ mật khẩu nào. Thay vào đó, chúng tôi sử dụng các dịch vụ của bên thứ ba để xác thực người dùng của mình. Chúng tôi cung cấp một số cách thuận tiện để tạo tài khoản và đăng nhập.</p><p>Bạn có thể chọn không tham gia bất kỳ lúc nào. Việc xóa tài khoản cũng đơn giản như việc tạo một tài khoản.</p>",
   "account.socialForm.description": "Đăng nhập bằng mạng xã hội ưa thích của bạn. Chúng tôi tôn trọng quyền riêng tư và hứa sẽ không bao giờ spam lên tường, bạn bè hoặc e-mail của bạn.",
   "footer.discordLink.description": "Thảo luận trên máy chủ Discord của chúng tôi.",
   "footer.emailLink.description": "Gửi bình luận và đề xuất đến info@keybr.com",

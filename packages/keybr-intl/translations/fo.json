@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Kundu ikki senda teldupost til <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Senda ein teldupost, við innritanarleinkju til <strong>{email}</strong>... Bíða eitt bil.",
   "account.emailState.sentText": "Vit hava sent ein teldupost við innritanarleinkju til  <strong>{email}</strong>. Hann burdi komið skjótt, vinarliga kannað eftir í tínum innbakka um ein ella tveir minuttir.”",
-  "account.signInPage.description": "<p>Stovna ein brúkara fyri at goyma tínar skrividátur á okkara servarum í cloud goymsluni. Hetta loyvir tær fáa atgongd til tín brúkara á øllum teldum og kagum. Um tú ikki hevur ein brúkara, verða tínar skrividátur goymdar lokalt og eru bert tøkar frá tínari núverandi teldu. </p><p>Vit goyma ikki nøkur loyniorð. Í staðin brúka vit tænastur frá triðja partí til at staðfesta okkara brúkarar. Vit bjóða fleiri hentar hættir at stovna brúkara og innrita. </p><p>Tú kanst altíð velja at taka teg úr skipanini. At strika ein brúkara er líka lætt sum at stovna ein.</p>",
   "footer.discordLink.description": "Kjakast á okkara Discord servara.",
   "footer.githubLink.description": "Keldu forritið hjá keybr.com er tøkt á Github.",
   "help.rule1.title": "Algoritman byrjar við teir byrjanar bókstavirnir",

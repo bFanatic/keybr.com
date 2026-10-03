@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Kon nie ’n epos na <strong>{email}</strong>: {message} gestuur het nie",
   "account.emailState.sendingText": "Stuur tans ’n epos met ’n intekenings-skakel na <strong>{email}</strong>... Wag asseblief ’n oomblik.",
   "account.emailState.sentText": "Ons het ’n epos met die inteken skakel na <strong>{email}</strong> gestuur. Dit behoort binnekort te arriveer, kyk in u inkassie in ’n minuut of twee.",
-  "account.signInPage.description": "<p>Skep ’n rekening om jou tikdata op ons bedieners in die wolk te stoor. Dit stel jou in staat om toegang tot jou profiel vanaf enige rekenaar te kry. As jy nie ’n rekening het nie, dan word jou tikdata plaaslik gestoor en is slegs vanaf jou huidige rekenaar toeganklik.</p><p>Ons stoor geen wagwoorde nie. In plaas daarvan gebruik ons derdeparty-dienste om ons gebruikers te verifieer. Ons bied verskeie gerieflike maniere om ’n rekening te skep en aan te meld.</p><p>Jy kan enige tyd onttrek. Om ’n rekening te verwyder is net so eenvoudig as om een te skep.</p>",
   "account.socialForm.description": "Teken in met u verkose sosiale netwerk. Ons respekteer u privaatheid en belowe om nooit you muur, vriende, of eposse met strooipos te bellemer nie.",
   "footer.discordLink.description": "Sluit aan by ons Discord.",
   "footer.emailLink.description": "Stuur u komentaar en voorstele na info@keybr.com",

@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nie można wysłać wiadomości poczty elektronicznej na adres <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Wysyłanie maila z linkiem do logowania na adres <strong>{email}</strong>... Zaczekaj chwilę.",
   "account.emailState.sentText": "Wysłaliśmy maila z linkiem do logowania na adres <strong>{email}</strong>. Niedługo powinna dotrzeć – sprawdź swoją skrzynkę odbiorczą za kilka minut.",
-  "account.signInPage.description": "<p>Utwórz konto do zapisu swoich danych dotyczących pisania na klawiaturze na naszych serwerach w chmurze. Umożliwi to dostęp do twojego profilu z dowolnego komputera lub przeglądarki internetowej. Jeśli nie masz konta, twoje dane dotyczące pisania na klawiaturze będą przechowywane lokalnie i dostępne wyłącznie na jednym komputerze.</p><p>Nie przechowujemy żadnych haseł. Zamiast tego korzystamy z usług zewnętrznych firm do uwierzytelniania naszych użytkowników. Oferujemy kilka wygodnych sposobów tworzenia konta oraz logowania.</p><p>W każdej chwili można zrezygnować. Usunięcie konta jest tak proste, jak jego utworzenie.</p>",
   "account.socialForm.description": "Zaloguj się za pośrednictwem preferowanych mediów społecznościowych. Szanujemy twoją prywatność i obiecujemy nie spamować twoich aktualności, twoich znajomych ani poczty elektronicznej.",
   "footer.discordLink.description": "Rozmawiaj na naszym serwerze Discord.",
   "footer.emailLink.description": "Wyślij komentarze i sugestie na adres info@keybr.com",

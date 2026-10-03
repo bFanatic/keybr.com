@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Impossible d’envoyer un e-mail à <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Envoi d’un e-mail avec le lien de connexion à <strong>{email}</strong>... Veuillez patienter un moment.",
   "account.emailState.sentText": "Nous avons envoyé un e-mail avec le lien de connexion à <strong>{email}</strong>. Il devrait arriver bientôt, veuillez vérifier votre boîte de réception dans une minute ou deux.",
-  "account.signInPage.description": "<p>Créez un compte pour stocker vos données de frappe sur nos serveurs dans le cloud. Cela vous permet d’accéder à votre profil depuis n’importe quel ordinateur ou navigateur. Si vous n’avez pas de compte, vos données de frappe sont stockées localement et ne sont accessibles qu’à partir de votre ordinateur actuel.</p><p>Nous ne stockons aucun mot de passe. Au lieu de cela, nous utilisons des services tiers pour authentifier nos utilisateurs. Nous offrons plusieurs façons pratiques de créer un compte et de vous connecter.</p><p>Vous pouvez vous désinscrire à tout moment. Supprimer un compte est aussi simple que d’en créer un.</p>",
   "account.socialForm.description": "S’identifier avec votre réseau social préféré. Nous respectons votre vie privée et promettons de ne jamais spammer votre mur, vos amis ou vos e-mails.",
   "footer.discordLink.description": "Discutez sur notre serveur Discord.",
   "footer.emailLink.description": "Envoyez vos commentaires et suggestions à l’adresse info@keybr.com",

@@ -5,7 +5,6 @@
   "account.emailState.errorText": "No se ha podido enviar el correo electrónico a <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Enviando un correo electrónico con el enlace de inicio de sesión a <strong>{email}</strong>... Por favor, espera un segundo.",
   "account.emailState.sentText": "Hemos enviado un correo electrónico con el enlace de incicio de sesión a <strong>{email}</strong>. Debería llegarte en breve, comprueba tu bandeja de entrada en uno o dos minutos.",
-  "account.signInPage.description": "<p>Crea una cuenta para almacenar tus datos de escritura en nuestros servidores en la nube. Esto te permite acceder a tu perfil desde cualquier ordenador o navegador. Si no tienes una cuenta, tus datos de mecanografía se almacenan localmente y solo son accesibles desde tu ordenador actual</p><p>No almacenamos ninguna contraseña. En su lugar, utilizamos servicios de terceros para autenticar a nuestros usuarios. Ofrecemos varias formas cómodas de crear una cuenta e iniciar sesión.</p><p>Puedes darte de baja en cualquier momento. Eliminar una cuenta es tan sencillo como crearla</p>",
   "account.socialForm.description": "Inicia sesión con tu red social favorita. Respetamos tu privacidad y nos comprometemos a no enviar nunca spam en tu muro, a tu amigos o correo electrónico.",
   "footer.discordLink.description": "Discute en nuestro servidor Discord.",
   "footer.emailLink.description": "Envía tus comentarios y sugerencias a info@keybr.com",

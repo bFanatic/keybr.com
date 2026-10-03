@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Es konnte keine E-Mail gesendet werden an<strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Versenden der E-Mail mit dem Anmeldelink an<strong>{email}</strong>... Bitte warten Sie einen Moment.",
   "account.emailState.sentText": "Wir haben eine E-Mail mit dem Login-Link an <strong>{email}</strong> geschickt. Sie sollte bald eintreffen. Bitte prüfen Sie Ihren Posteingang in ein oder zwei Minuten.",
-  "account.signInPage.description": "<p>Erstellen Sie ein Konto, um Ihre Tippdaten auf unseren Servern in der Cloud zu speichern. So können Sie von jedem Computer oder Browser aus auf Ihr Profil zugreifen. Wenn Sie kein Konto haben, werden Ihre Tippdaten lokal gespeichert und sind nur von Ihrem aktuellen Computer aus zugänglich.</p><p>Wir speichern keine Passwörter. Stattdessen verwenden wir Dienste von Drittanbietern, um unsere Benutzer zu authentifizieren. Wir bieten mehrere bequeme Möglichkeiten, ein Konto zu erstellen und sich anzumelden.</p><p>Sie können sich jederzeit abmelden. Das Löschen eines Kontos ist genau so einfach wie das Anlegen dieses.</p>",
   "account.socialForm.description": "Melden Sie sich über Ihr bevorzugtes soziales Netzwerk an. Wir respektieren Ihre Privatsphäre und versprechen Ihre Wall, Ihre Freunde oder Ihre E-Mail niemals zu spammen.",
   "footer.discordLink.description": "Diskutieren Sie auf unserem Discord-Server.",
   "footer.emailLink.description": "Senden Sie Ihre Kommentare und Vorschläge an info@keybr.com",

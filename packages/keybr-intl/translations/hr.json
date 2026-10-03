@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nije moguće poslati poruku e-pošte na adresu <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Slanje e-pošte s vezom za prijavu na <strong>{email}</strong>... Molim vas, pričekajte malo.",
   "account.emailState.sentText": "Poslali smo poruku e-pošte s vezom za prijavu na <strong>{email}</strong>. Trebao bi stići uskoro, provjerite pristiglu poštu za minutu ili dvije.",
-  "account.signInPage.description": "<p>Izradite račun za pohranu podataka o tipkanju na našim poslužiteljima u oblaku. To vam omogućuje pristup profilu s bilo kojeg računala ili preglednika. Ako nemate račun, podaci o tipkanju pohranjuju se lokalno i dostupni su samo s vašeg trenutnog računala.</p><p>Ne pohranjujemo lozinke. Umjesto toga, koristimo usluge trećih strana za autentifikaciju naših korisnika. Nudimo nekoliko prikladnih načina za stvaranje računa i prijavu.</p><p>Možete se isključiti u bilo kojem trenutku. Brisanje računa jednostavno je kao i stvaranje.</p>",
   "account.socialForm.description": "Prijavite se željenom društvenom mrežom. Poštujemo vašu privatnost i obećavamo da nikada nećemo slati neželjenu poštu vašem zidu, prijateljima ili e-pošti.",
   "footer.discordLink.description": "Razgovarajte na našem Discord poslužitelju.",
   "footer.emailLink.description": "Pošaljite svoje komentare i prijedloge info@keybr.com",

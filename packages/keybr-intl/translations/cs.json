@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Nepodařilo se odeslat e-mail na <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Odeslání e-mailu s přihlašovacím odkazem na adresu <strong>{email}</strong>... Počkejte prosím chvíli.",
   "account.emailState.sentText": "Odeslali jsme e-mail s přihlašovacím odkazem na adresu <strong>{email}</strong>. Měl by brzy dorazit, zkontrolujte prosím za minutu nebo dvě svou schránku.",
-  "account.signInPage.description": "<p>Vytvořte si účet a uložte své statistiky a nastavení na naše servery v cloudu. Díky tomu budete mít přístup ke svému profilu z libovolného počítače nebo prohlížeče. Pokud nemáte účet, pak jsou vaše údaje o psaní uloženy lokálně a jsou přístupné pouze z vašeho aktuálního počítače.</p><p>Neukládáme žádná hesla. Místo toho používáme k ověřování uživatelů služby třetích stran. Nabízíme několik pohodlných způsobů vytvoření účtu a přihlášení.</p><p>Kdykoli se můžete odhlásit. Odstranění účtu je stejně jednoduché jako jeho vytvoření.</p>",
   "account.socialForm.description": "Přihlašte se pomocí preferované sociální sítě. Respektujeme vaše soukromí a slibujeme, že nikdy nebudeme spamovat vaši zeď, přátele ani e-mail.",
   "footer.discordLink.description": "Diskutujte na našem serveru Discord.",
   "footer.emailLink.description": "Pošlete své připomínky a návrhy na adresu info@keybr.com",

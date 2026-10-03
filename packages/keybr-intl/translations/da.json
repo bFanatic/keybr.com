@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Kunne ikke sende e-mail til <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Sender en e-mail med login link til <strong>{email}</strong>... Vent et øjeblik tak.",
   "account.emailState.sentText": "Vi har sendt en e-mail med login-linket til <strong>{email}</strong>. Den skulle ankomme snart, tjek venligst din indbakke om et minut eller to.",
-  "account.signInPage.description": "<p>Opret en konto for at gemme dine skrivedata på vores servere i skyen. Dette giver dig adgang til din profil fra enhver computer eller browser. Hvis du ikke har en konto, gemmes dine indtastningsdata lokalt og er kun tilgængelige fra din nuværende computer.</p><p>Vi gemmer ingen adgangskoder. I stedet bruger vi tredjepartstjenester til at autentificere vores brugere. Vi tilbyder flere praktiske måder at oprette en konto og logge på.</p><p>Du kan til enhver tid framelde dig. Det er lige så nemt at slette en konto som at oprette en.</p>",
   "account.socialForm.description": "Log ind med dit foretrukne sociale netværk. Vi respekterer dit privatliv og lover aldrig at spamme din væg, venner eller e-mail.",
   "footer.discordLink.description": "Diskuter på vores Discord-server.",
   "footer.emailLink.description": "Send dine kommentarer og forslag til info@keybr.com",

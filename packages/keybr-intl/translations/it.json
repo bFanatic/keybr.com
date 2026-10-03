@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Impossibile inviare e-mail a <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Invio di un’e-mail con il collegamento di accesso a <strong>{email}</strong>... Attendi un secondo.",
   "account.emailState.sentText": "Abbiamo inviato un’e-mail con il collegamento di accesso a <strong>{email}</strong>. Dovrebbe arrivare presto, controlla la tua casella di posta tra un minuto o due.",
-  "account.signInPage.description": "<p>Crea un account per conservare i tuoi dati di scrittura sui nostri server nel cloud. Questo ti permette di accedere al tuo profilo da qualsiasi computer o browser. Se non hai un account i tuoi dati saranno conservati localmente e saranno accessibili solamente dal tuo computer attuale.</p><p>Noi non conserviamo nessuna password, bensì usiamo un servizio di terze parti per verificare i nostri utenti. Vi offriamo vari modi per creare un account e accedervi.</p><p>Puoi cancellarne uno in un qualsiasi momento. Cancellare un account è facile quanto crearne uno.</p>",
   "account.socialForm.description": "Accedi con un social network a tua scelta. Rispetteremo la vostra privacy e vi prometteremo di non inviare spam nella vostra bacheca, ai vostri amici o per e-mail.",
   "footer.discordLink.description": "Chatta sul nostro server Discord.",
   "footer.emailLink.description": "Invia i tuoi commenti e suggerimenti a info@keybr.com",

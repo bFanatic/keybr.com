@@ -5,7 +5,6 @@
   "account.emailState.errorText": "Kunde inte skicka e-mejl till <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "Skickar e-mail med inloggningslänk till <strong>{email}</strong>... Vänligen vänta en stund.",
   "account.emailState.sentText": "Vi har skickat ett mejl med en inloggningslänk till <strong>{email}</strong>. Det borde snart komma fram, vänligen kolla din inkorg om en minut eller två.",
-  "account.signInPage.description": "<p>Skapa ett konto för att spara data om ditt skrivande på våra molnservrar. Detta låter dig nå ditt konto från vilken webbläsare eller dator som helst. Om du inte har ett konto så sparas din data lokalt och kan bara nås från din nuvarande dator.</p><p>Vi sparar inga lösenord. Vi använder istället tredjepartstjänster för att autentisera våra användare. Vi erbjuder flera smidiga sätt att skapa och logga in på konton.</p><p>Du kan sluta när som helst. Att ta bort ett konto är lika enkelt som att skapa ett.</p>",
   "account.socialForm.description": "Logga in via ditt föredragna sociala media. Vi respekterar din integritet och lovar att aldrig skicka spam till din sida, dina vänner eller din mejl.",
   "footer.discordLink.description": "Diskutera på vår Discord server.",
   "footer.emailLink.description": "Skicka dina kommentarer och förslag till info@keybr.com",

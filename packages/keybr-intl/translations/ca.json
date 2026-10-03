@@ -5,7 +5,6 @@
   "account.emailState.errorText": "No s’ha pogut enviar el correu electrònic a <strong>{email}</strong>: {message}",
   "account.emailState.sendingText": "S’està enviant un correu electrònic amb l’enllaç d’inici de sessió a <strong>{email}</strong>... Espereu un segon.",
   "account.emailState.sentText": "Hem enviat un correu electrònic amb l’enllaç d’inici de sessió a <strong>{email}</strong>. Hauria d’arribar aviat, si us plau, comproveu la vostra safata d’entrada d’aquí a un minut o dos.",
-  "account.signInPage.description": "<p>Creeu un compte per emmagatzemar les vostres dades d’escriptura als nostres servidors al núvol. Això us permet accedir al vostre perfil des de qualsevol ordinador o navegador. Si no teniu cap compte, les vostres dades d’escriptura s’emmagatzemen localment i només hi podeu accedir des del vostre ordinador actual.</p><p>No emmagatzemem cap contrasenya. Enlloc d’això, utilitzem serveis de tercers per autenticar els nostres usuaris. Oferim diverses maneres de crear un compte i iniciar la sessió.</p><p>Podeu desactivar-lo en qualsevol moment. Suprimir un compte és tan senzill com crear-ne un.</p>",
   "account.socialForm.description": "Inicieu la sessió amb la vostra xarxa social preferida. Respectem la vostra privadesa i ens comprometem a no enviar mai correu brossa al vostre mur, amics o correu electrònic.",
   "footer.discordLink.description": "Comunicar al nostre servidor de Discord.",
   "footer.emailLink.description": "Envieu els vostres comentaris i suggeriments a info@keybr.com",
