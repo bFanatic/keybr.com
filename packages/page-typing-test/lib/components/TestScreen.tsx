@@ -1,5 +1,10 @@
 import { Screen } from "@keybr/pages-shared";
-import { type LineList, makeStats } from "@keybr/textinput";
+import {
+  idleSettings,
+  type LineList,
+  makeStats,
+  PauseCompensator,
+} from "@keybr/textinput";
 import { useSoundPlayer } from "@keybr/textinput-sounds";
 import { TextArea } from "@keybr/textinput-ui";
 import { Box, type Focusable, Spacer, useView } from "@keybr/widget";
@@ -40,6 +45,7 @@ function Controller({
   const [session, setSession] = useState(() => nextTest(settings, generator));
   const [lines, setLines] = useState<LineList>(Session.emptyLines);
   const [progress, setProgress] = useState(Session.emptyProgress);
+  const [pauses] = useState(() => new PauseCompensator());
   useEffect(() => {
     generator.reset(mark);
     const session = nextTest(settings, generator);
@@ -65,16 +71,23 @@ function Controller({
             lines={lines}
             wrap={false}
             onFocus={() => {
-              generator.reset(mark);
-              const session = nextTest(settings, generator);
-              setSession(session);
-              setLines(session.getLines());
+              if (idleSettings.resetOnBlur) {
+                generator.reset(mark);
+                const session = nextTest(settings, generator);
+                setSession(session);
+                setLines(session.getLines());
+              }
             }}
-            onKeyDown={session.handleKeyDown}
-            onKeyUp={session.handleKeyUp}
+            onKeyDown={(event) => {
+              session.handleKeyDown(pauses.adjust(event));
+            }}
+            onKeyUp={(event) => {
+              session.handleKeyUp(pauses.adjust(event));
+            }}
             onInput={(event) => {
-              const { feedback, progress, completed } =
-                session.handleInput(event);
+              const { feedback, progress, completed } = session.handleInput(
+                pauses.adjust(event),
+              );
               setLines(session.getLines());
               setProgress(progress);
               player(feedback);

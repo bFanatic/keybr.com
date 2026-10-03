@@ -1,6 +1,10 @@
 import { type KeyId, useKeyboard } from "@keybr/keyboard";
 import { type Result } from "@keybr/result";
-import { type LineList } from "@keybr/textinput";
+import {
+  idleSettings,
+  type LineList,
+  PauseCompensator,
+} from "@keybr/textinput";
 import { addKey, deleteKey, emulateLayout } from "@keybr/textinput-events";
 import { makeSoundPlayer } from "@keybr/textinput-sounds";
 import {
@@ -38,9 +42,12 @@ export const Controller = memo(function Controller({
     ["Ctrl+ArrowRight"]: handleSkipLesson,
     ["Escape"]: handleResetLesson,
   });
-  useWindowEvent("focus", handleResetLesson);
-  useWindowEvent("blur", handleResetLesson);
-  useDocumentEvent("visibilitychange", handleResetLesson);
+  const handleFocusChange = idleSettings.resetOnBlur
+    ? handleResetLesson
+    : () => {};
+  useWindowEvent("focus", handleFocusChange);
+  useWindowEvent("blur", handleFocusChange);
+  useDocumentEvent("visibilitychange", handleFocusChange);
   return (
     <Presenter
       state={state}
@@ -91,6 +98,7 @@ function useLessonState(
       setDepressedKeys((state.depressedKeys = []));
       timeout.cancel();
     };
+    const pauses = new PauseCompensator();
     const playSounds = makeSoundPlayer(state.settings);
     const { onKeyDown, onKeyUp, onInput } = emulateLayout(
       state.settings,
@@ -108,10 +116,12 @@ function useLessonState(
         },
         onInput: (event) => {
           state.lastLesson = null;
-          const feedback = state.onInput(event);
+          const feedback = state.onInput(pauses.adjust(event));
           setLines(state.lines);
           playSounds(feedback);
-          timeout.schedule(handleResetLesson, 10000);
+          if (idleSettings.resetTimeout > 0) {
+            timeout.schedule(handleResetLesson, idleSettings.resetTimeout);
+          }
         },
       },
     );

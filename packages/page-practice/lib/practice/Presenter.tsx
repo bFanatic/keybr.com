@@ -2,7 +2,7 @@ import { type KeyId } from "@keybr/keyboard";
 import { names } from "@keybr/lesson-ui";
 import { Screen } from "@keybr/pages-shared";
 import { enumProp, Preferences } from "@keybr/settings";
-import { type LineList } from "@keybr/textinput";
+import { idleSettings, type LineList } from "@keybr/textinput";
 import {
   type IInputEvent,
   type IKeyboardEvent,
@@ -223,7 +223,9 @@ export class Presenter extends PureComponent<Props, State> {
         focus: true,
       },
       () => {
-        this.props.onResetLesson();
+        if (idleSettings.resetOnBlur) {
+          this.props.onResetLesson();
+        }
       },
     );
   };
@@ -234,7 +236,9 @@ export class Presenter extends PureComponent<Props, State> {
         focus: false,
       },
       () => {
-        this.props.onResetLesson();
+        if (idleSettings.resetOnBlur) {
+          this.props.onResetLesson();
+        }
       },
     );
   };
