@@ -19,14 +19,11 @@ export namespace AccountService {
     return await response.json();
   }
 
-  export async function loginSimple(
-    username: string,
-    code: string,
-  ): Promise<unknown> {
+  export async function loginSimple(username: string): Promise<unknown> {
     const response = await request
       .use(expectType("application/json"))
       .POST("/auth/login-simple")
-      .send({ username, code });
+      .send({ username });
     return await response.json();
   }
 

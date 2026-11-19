@@ -5,7 +5,7 @@ import { deepEqual, isNotNull, isNull } from "rich-assert";
 import { type SignInActions } from "./actions.ts";
 import { SignInSection } from "./SignInSection.tsx";
 
-test("render: alleen eenvoudige login met naam en klascode", () => {
+test("render: alleen eenvoudige login met naam", () => {
   const r = render(
     <FakeIntlProvider>
       <SignInSection actions={{} as SignInActions} />
@@ -13,7 +13,6 @@ test("render: alleen eenvoudige login met naam en klascode", () => {
   );
 
   isNotNull(r.queryByPlaceholderText("voornaam.naam", { exact: false }));
-  isNotNull(r.queryByPlaceholderText("klascode"));
   isNull(r.queryByText("Google", { exact: false }));
   isNull(r.queryByText("Microsoft", { exact: false }));
   isNull(r.queryByText("Facebook", { exact: false }));
@@ -21,15 +20,15 @@ test("render: alleen eenvoudige login met naam en klascode", () => {
   r.unmount();
 });
 
-test("inloggen stuurt naam en klascode door", async () => {
+test("inloggen stuurt de naam door", async () => {
   const calls: string[][] = [];
   const r = render(
     <FakeIntlProvider>
       <SignInSection
         actions={
           {
-            loginSimple: (username: string, code: string) => {
-              calls.push([username, code]);
+            loginSimple: (username: string) => {
+              calls.push([username]);
               return new Promise(() => {}); // blijft "Even geduld..."
             },
           } as unknown as SignInActions
@@ -41,13 +40,10 @@ test("inloggen stuurt naam en klascode door", async () => {
   fireEvent.change(r.getByPlaceholderText("voornaam.naam", { exact: false }), {
     target: { value: " emma.peeters " },
   });
-  fireEvent.change(r.getByPlaceholderText("klascode"), {
-    target: { value: " wafel42 " },
-  });
   fireEvent.click(r.getByRole("button"));
 
   await r.findByText("Even geduld", { exact: false });
-  deepEqual(calls, [["emma.peeters", "wafel42"]]);
+  deepEqual(calls, [["emma.peeters"]]);
 
   r.unmount();
 });
