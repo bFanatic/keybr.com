@@ -1,0 +1,28 @@
+# Dependabot voor de fork (bFanatic/keybr.com).
+#
+# Upstream (aradzie/keybr.com) werkt de npm-dependencies zelf geregeld bij; die
+# updates komen binnen via een merge van upstream. Hier dus vooral:
+#   - security-updates (aanzetten in Settings → Code security), voor alle npm-pakketten
+#   - versie-updates, gegroepeerd en beperkt, zodat het aantal PR's klein blijft
+#     en merges met upstream niet onnodig conflicteren
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule: { interval: monthly }
+    open-pull-requests-limit: 3
+    groups:
+      npm-minor-patch:
+        update-types: [minor, patch]
+    ignore:
+      # Grote versiesprongen volgen we via upstream
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: docker
+    directory: /
+    schedule: { interval: weekly }
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: monthly }
