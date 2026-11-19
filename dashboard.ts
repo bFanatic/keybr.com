@@ -462,7 +462,8 @@ function esc(s: string): string {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 // --- Admin: gebruikersbeheer ---
@@ -587,7 +588,7 @@ function generateAdminHtml(summaries: UserSummary[]): string {
           <td class="num">${s.sessies}</td>
           <td>
             <button class="btn btn-save" onclick="saveSettings(${s.id})">Opslaan</button>
-            <button class="btn btn-danger" onclick="deleteUser(${s.id}, '${esc(s.naam)}')">Verwijderen</button>
+            <button class="btn btn-danger" data-user-id="${s.id}" data-naam="${esc(s.naam)}" onclick="deleteUser(this)">Verwijderen</button>
           </td>
         </tr>`,
     )
@@ -752,7 +753,10 @@ function generateAdminHtml(summaries: UserSummary[]): string {
       }
     }
 
-    async function deleteUser(userId, naam) {
+    async function deleteUser(knop) {
+      // id en naam uit data-attributen: de naam komt nooit in JS-code terecht (geen XSS)
+      const userId = Number(knop.dataset.userId);
+      const naam = knop.dataset.naam;
       if (!confirm(\`Weet je zeker dat je "\${naam}" wilt verwijderen? Alle data wordt gewist.\`)) return;
       try {
         const res = await fetch(\`/api/users/\${userId}\`, {
@@ -794,10 +798,10 @@ function checkAdminCode(req: IncomingMessage): boolean {
 }
 
 function setAuthCookie(res: ServerResponse): void {
-  // Cookie geldig voor 24 uur, alleen via HTTP
+  // Cookie geldig voor 24 uur, niet leesbaar voor JS, alleen via HTTPS
   res.setHeader(
     "Set-Cookie",
-    `dashboard_code=${encodeURIComponent(ADMIN_CODE)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=86400`,
+    `dashboard_code=${encodeURIComponent(ADMIN_CODE)}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=86400`,
   );
 }
 

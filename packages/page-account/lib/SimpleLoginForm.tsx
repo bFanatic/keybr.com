@@ -7,6 +7,7 @@ import { type SignInActions } from "./actions.ts";
 export function SimpleLoginForm({ actions }: { actions: SignInActions }) {
   const { formatMessage } = useIntl();
   const [username, setUsername] = useState("");
+  const [code, setCode] = useState("");
   const [{ state, message }, setState] = useState<{
     state: "normal" | "sending" | "success" | "error";
     message: string | null;
@@ -20,7 +21,7 @@ export function SimpleLoginForm({ actions }: { actions: SignInActions }) {
     if (username.trim() !== "") {
       setState({ state: "sending", message: null });
       actions
-        .loginSimple(username.trim())
+        .loginSimple(username.trim(), code.trim())
         .then(() => {
           setState({ state: "success", message: null });
           window.location.href = "/account";
@@ -86,6 +87,18 @@ export function SimpleLoginForm({ actions }: { actions: SignInActions }) {
               />
             </Field>
             <Field>
+              <TextField
+                size={12}
+                type="password"
+                placeholder={formatMessage({
+                  id: "account.simpleLogin.codePlaceholder",
+                  defaultMessage: "klascode",
+                })}
+                value={code}
+                onChange={setCode}
+              />
+            </Field>
+            <Field>
               <Button
                 size={16}
                 icon={<Icon shape={mdiLogin} />}
@@ -101,7 +114,7 @@ export function SimpleLoginForm({ actions }: { actions: SignInActions }) {
           <Para>
             <FormattedMessage
               id="account.simpleLogin.description"
-              defaultMessage="Typ je naam in als voornaam.naam (kleine letters, met een punt). Als je naam nog niet bestaat, wordt er automatisch een account aangemaakt. Gebruik elke les dezelfde naam zodat je voortgang bewaard blijft."
+              defaultMessage="Typ je naam in als voornaam.naam (kleine letters, met een punt) en de klascode die je van je leerkracht kreeg. Als je naam nog niet bestaat, wordt er automatisch een account aangemaakt. Gebruik elke les dezelfde naam zodat je voortgang bewaard blijft."
             />
           </Para>
         </>

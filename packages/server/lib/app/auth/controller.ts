@@ -5,6 +5,8 @@ import {
   pathParam,
   queryParam,
 } from "@fastr/controller";
+import { createHash, timingSafeEqual } from "node:crypto";
+import { setTimeout as sleep } from "node:timers/promises";
 import { Context } from "@fastr/core";
 import {
   ApplicationError,
@@ -14,6 +16,7 @@ import {
 import { inject, injectable } from "@fastr/invert";
 import { type RouterState } from "@fastr/middleware-router";
 import { randomString, type SessionState } from "@fastr/middleware-session";
+import { Env } from "@keybr/config";
 import { User, UserLoginRequest } from "@keybr/database";
 import { Logger } from "@keybr/logger";
 import { type AbstractAdapter } from "@keybr/oauth";
@@ -36,6 +39,7 @@ const PCreateToken = zod(TCreateToken, () => {
 
 const TSimpleLogin = z.object({
   username: z.string().min(1).max(32),
+  code: z.string().max(64).optional(),
 });
 type TSimpleLogin = z.infer<typeof TSimpleLogin>;
 const PSimpleLogin = zod(TSimpleLogin, () => {
@@ -135,8 +139,12 @@ export class Controller {
   @http.POST({ name: "login-simple", path: "/auth/login-simple" })
   async loginSimple(
     ctx: Context<RouterState & SessionState & AuthState>,
-    @body.json(PSimpleLogin, jsonOpts) { username }: TSimpleLogin,
+    @body.json(PSimpleLogin, jsonOpts) { username, code }: TSimpleLogin,
   ) {
+    if (!checkLoginCode(code ?? "")) {
+      await sleep(1000); // raden vertragen
+      throw new ForbiddenError("Verkeerde klascode");
+    }
     ctx.state.session.destroy();
     const user = await User.loginByName(username.trim());
     ctx.state.session.start();
@@ -174,4 +182,18 @@ export class Controller {
     ctx.state.session.destroy();
     ctx.response.status = 204;
   }
+}
+
+/**
+ * Klascode voor de eenvoudige login (LOGIN_CODE in .env), gelijk voor iedereen.
+ * Hoofdletters en spaties rond de code tellen niet mee. Leeg = geen code nodig.
+ */
+export function checkLoginCode(code: string): boolean {
+  const expected = Env.getString("LOGIN_CODE", "").trim();
+  if (expected === "") {
+    return true;
+  }
+  const hash = (s: string) =>
+    createHash("sha256").update(s.trim().toLowerCase()).digest();
+  return timingSafeEqual(hash(code), hash(expected));
 }
