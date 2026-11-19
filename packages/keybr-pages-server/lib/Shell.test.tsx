@@ -5,7 +5,7 @@ import { FakeIntlProvider } from "@keybr/intl";
 import { PageDataContext, Pages } from "@keybr/pages-shared";
 import { load } from "cheerio";
 import { renderToStaticMarkup } from "react-dom/server";
-import { equal, isFalse, isTrue, like } from "rich-assert";
+import { equal, isFalse, like } from "rich-assert";
 import { Shell } from "./Shell.tsx";
 
 test("render", () => {
@@ -40,8 +40,8 @@ test("render", () => {
     "data-color": "system",
     "data-font": "open-sans",
   });
-  isTrue(html.includes("google"));
-  isTrue(html.includes("cloudflare"));
+  isFalse(html.includes("google")); // fork: geen advertenties of trackers van Google
+  isFalse(html.includes("cloudflare")); // fork: geen analytics van Cloudflare
   equal($("nav").length, 0);
 });
 

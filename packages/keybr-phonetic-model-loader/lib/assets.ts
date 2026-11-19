@@ -1,11 +1,13 @@
 import { Language } from "@keybr/keyboard";
 import AR from "@keybr/phonetic-model/assets/model-ar.data";
 import BE from "@keybr/phonetic-model/assets/model-be.data";
+import BR from "@keybr/phonetic-model/assets/model-br.data";
 import CS from "@keybr/phonetic-model/assets/model-cs.data";
 import DA from "@keybr/phonetic-model/assets/model-da.data";
 import DE from "@keybr/phonetic-model/assets/model-de.data";
 import EL from "@keybr/phonetic-model/assets/model-el.data";
 import EN from "@keybr/phonetic-model/assets/model-en.data";
+import EN_GB from "@keybr/phonetic-model/assets/model-en-GB.data";
 import ES from "@keybr/phonetic-model/assets/model-es.data";
 import ET from "@keybr/phonetic-model/assets/model-et.data";
 import FA from "@keybr/phonetic-model/assets/model-fa.data";
@@ -14,6 +16,7 @@ import FR from "@keybr/phonetic-model/assets/model-fr.data";
 import HE from "@keybr/phonetic-model/assets/model-he.data";
 import HR from "@keybr/phonetic-model/assets/model-hr.data";
 import HU from "@keybr/phonetic-model/assets/model-hu.data";
+import HY from "@keybr/phonetic-model/assets/model-hy.data";
 import IT from "@keybr/phonetic-model/assets/model-it.data";
 import JA from "@keybr/phonetic-model/assets/model-ja.data";
 import LT from "@keybr/phonetic-model/assets/model-lt.data";
@@ -29,6 +32,7 @@ import SV from "@keybr/phonetic-model/assets/model-sv.data";
 import TH from "@keybr/phonetic-model/assets/model-th.data";
 import TR from "@keybr/phonetic-model/assets/model-tr.data";
 import UK from "@keybr/phonetic-model/assets/model-uk.data";
+import VI from "@keybr/phonetic-model/assets/model-vi.data";
 
 export function modelAssetPath(language: Language): string {
   switch (language) {
@@ -36,6 +40,8 @@ export function modelAssetPath(language: Language): string {
       return AR;
     case Language.BE:
       return BE;
+    case Language.BR:
+      return BR;
     case Language.CS:
       return CS;
     case Language.DA:
@@ -46,6 +52,8 @@ export function modelAssetPath(language: Language): string {
       return EL;
     case Language.EN:
       return EN;
+    case Language.EN_GB:
+      return EN_GB;
     case Language.ES:
       return ES;
     case Language.ET:
@@ -62,6 +70,8 @@ export function modelAssetPath(language: Language): string {
       return HR;
     case Language.HU:
       return HU;
+    case Language.HY:
+      return HY;
     case Language.IT:
       return IT;
     case Language.JA:
@@ -92,6 +102,8 @@ export function modelAssetPath(language: Language): string {
       return TR;
     case Language.UK:
       return UK;
+    case Language.VI:
+      return VI;
     default:
       throw new Error();
   }

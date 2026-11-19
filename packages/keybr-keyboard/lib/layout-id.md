@@ -99,7 +99,7 @@
 - `0x6e`:
 - `0x6f`:
 - `0x70`: Russian/Russia
-- `0x71`:
+- `0x71`: Russian/Statica 3x5 (Matrix)
 - `0x72`:
 - `0x73`:
 - `0x74`: Belarusian/Belarus
@@ -163,7 +163,7 @@
 - `0xae`: English/Kuntem
 - `0xaf`: English/Hands Down Promethium Inverted (Matrix)
 - `0xb0`:
-- `0xb1`:
+- `0xb1`: Breton/France
 - `0xb2`:
 - `0xb3`:
 - `0xb4`:
@@ -173,10 +173,10 @@
 - `0xb8`: English/Enthium V10 (Matrix)
 - `0xb9`: English/Enthium V11 (Matrix)
 - `0xba`: English/Enthium V13 (Matrix)
-- `0xbb`:
-- `0xbc`:
-- `0xbd`:
-- `0xbe`:
+- `0xbb`: English/Enthium V14 (Matrix)
+- `0xbc`: Armenian/Armenian Phonetic
+- `0xbd`: Armenian/Armenian Typewriter
+- `0xbe`: Armenian/Armenian Eastern
 - `0xbf`:
 - `0xc0`:
 - `0xc1`:
@@ -243,7 +243,7 @@
 - `0xfe`:
 - `0xff`:
 
-92 allocated identifiers
+98 allocated identifiers
 
-148 free identifiers
+142 free identifiers
 

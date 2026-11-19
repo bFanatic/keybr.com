@@ -88,7 +88,7 @@ export function SimpleLoginForm({ actions }: { actions: SignInActions }) {
             </Field>
             <Field>
               <TextField
-                size={12}
+                size={16}
                 type="password"
                 placeholder={formatMessage({
                   id: "account.simpleLogin.codePlaceholder",

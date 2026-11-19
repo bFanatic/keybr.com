@@ -1,6 +1,6 @@
 # English
 
-Translated: 335 messages, 4464 words
+Translated: 336 messages, 4474 words
 
 Untranslated: 0 messages, 0 words
 
@@ -8,12 +8,13 @@ Untranslated: 0 messages, 0 words
 
 Translated: 325 messages, 4396 words
 
-Untranslated: 9 messages, 65 words
+Untranslated: 10 messages, 75 words
 
 * *Letters*
 * *Volume:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -24,10 +25,11 @@ Untranslated: 9 messages, 65 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -38,10 +40,11 @@ Untranslated: 7 messages, 63 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -50,28 +53,29 @@ Untranslated: 7 messages, 63 words
 
 # Bangla
 
-Translated: 327 messages, 4398 words
+Translated: 328 messages, 4415 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 7 messages, 56 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
-* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Catalan
 
 Translated: 296 messages, 3208 words
 
-Untranslated: 36 messages, 1231 words
+Untranslated: 37 messages, 1241 words
 
 * *Errors*
 * *Zones:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Sound theme:*
 * *Even geduld...*
 * *Explain charts*
@@ -87,21 +91,19 @@ Untranslated: 36 messages, 1231 words
 * *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Generate typing lessons from the text of a book. All keys ar...*
 * *Highlight a key that must to be pressed next. Use this optio...*
-* *<p>This indicator shows the current subset of letters used t...*
 * ...
 
 # Czech
 
-Translated: 322 messages, 4392 words
+Translated: 324 messages, 4394 words
 
-Untranslated: 12 messages, 69 words
+Untranslated: 11 messages, 77 words
 
 * *Font:*
-* *Reset*
-* *Zones:*
 * *Syntax:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Sound theme:*
 * *Even geduld...*
 * *Key sounds only*
@@ -113,7 +115,7 @@ Untranslated: 12 messages, 69 words
 
 Translated: 317 messages, 4341 words
 
-Untranslated: 15 messages, 98 words
+Untranslated: 16 messages, 108 words
 
 * *Score*
 * *Layout*
@@ -121,6 +123,7 @@ Untranslated: 15 messages, 98 words
 * *Layouts*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Position*
 * *Multiplayer*
 * *Download data*
@@ -135,10 +138,11 @@ Untranslated: 15 messages, 98 words
 
 Translated: 325 messages, 4396 words
 
-Untranslated: 9 messages, 65 words
+Untranslated: 10 messages, 75 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Position*
 * *Alphabet:*
 * *Even geduld...*
@@ -151,10 +155,11 @@ Untranslated: 9 messages, 65 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -165,7 +170,7 @@ Untranslated: 7 messages, 63 words
 
 Translated: 63 messages, 778 words
 
-Untranslated: 264 messages, 3625 words
+Untranslated: 265 messages, 3635 words
 
 * *GO!*
 * *Copy*
@@ -193,10 +198,11 @@ Untranslated: 264 messages, 3625 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -207,12 +213,13 @@ Untranslated: 7 messages, 63 words
 
 Translated: 324 messages, 4395 words
 
-Untranslated: 10 messages, 66 words
+Untranslated: 11 messages, 76 words
 
 * *GO!*
 * *Font:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Progress*
 * *Even geduld...*
 * *Key sounds only*
@@ -222,37 +229,37 @@ Untranslated: 10 messages, 66 words
 
 # Persian
 
-Translated: 273 messages, 2475 words
+Translated: 282 messages, 2628 words
 
-Untranslated: 59 messages, 1964 words
+Untranslated: 51 messages, 1821 words
 
 * *Books*
 * *Zones:*
 * *Syntax:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Sound theme:*
 * *Top accuracy*
 * *Even geduld...*
 * *Explain charts*
 * *Key sounds only*
-* *Accuracy Streaks*
-* *Average accuracy*
-* *Relative Accuracy*
 * *Repeat each word:*
 * *voornaam.naam (bv. emma.peeters)*
 * *Keyboard hardware emulates layout*
-* *Switch the current interface layout.*
 * *Circle color: {label1} – hit count, {label2} – miss count.*
-* *Generate lessons that resemble the specified programming lan...*
 * *Practice punctuation characters that are specific to a progr...*
+* *Show color coding of the keyboard zones. Use this option to ...*
+* *Bar color: {label1} – hit count, {label2} – miss count, {lab...*
+* *Generate typing lessons from the text of a book. All keys ar...*
+* *Horizontal axis: lesson number. Vertical axis: typing speed ...*
 * ...
 
 # Finnish
 
 Translated: 194 messages, 1936 words
 
-Untranslated: 134 messages, 2469 words
+Untranslated: 135 messages, 2479 words
 
 * *GO!*
 * *Time*
@@ -262,6 +269,7 @@ Untranslated: 134 messages, 2469 words
 * *Syntax:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Position*
 * *Practice*
 * *Settings*
@@ -273,14 +281,13 @@ Untranslated: 134 messages, 2469 words
 * *Multiplayer*
 * *Smoothness:*
 * *Play sounds:*
-* *Average speed*
 * ...
 
 # Faroese
 
 Translated: 30 messages, 235 words
 
-Untranslated: 296 messages, 4157 words
+Untranslated: 297 messages, 4167 words
 
 * *GO!*
 * *Copy*
@@ -308,13 +315,14 @@ Untranslated: 296 messages, 4157 words
 
 Translated: 319 messages, 4196 words
 
-Untranslated: 15 messages, 265 words
+Untranslated: 16 messages, 275 words
 
 * *Zones:*
 * *Options*
 * *Volume:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Position*
 * *Alphabet:*
 * *Even geduld...*
@@ -330,11 +338,12 @@ Untranslated: 15 messages, 265 words
 
 Translated: 323 messages, 4387 words
 
-Untranslated: 11 messages, 74 words
+Untranslated: 12 messages, 84 words
 
 * *Zones:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Smoothness:*
 * *Sound theme:*
 * *M|T|W|T|F|S|S*
@@ -348,10 +357,11 @@ Untranslated: 11 messages, 74 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -362,12 +372,13 @@ Untranslated: 7 messages, 63 words
 
 Translated: 323 messages, 4392 words
 
-Untranslated: 11 messages, 69 words
+Untranslated: 12 messages, 79 words
 
 * *Font:*
 * *Reset*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Multiplayer*
 * *Even geduld...*
 * *Key sounds only*
@@ -380,10 +391,11 @@ Untranslated: 11 messages, 69 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -394,12 +406,13 @@ Untranslated: 7 messages, 63 words
 
 Translated: 325 messages, 4396 words
 
-Untranslated: 9 messages, 65 words
+Untranslated: 10 messages, 75 words
 
 * *GO!*
 * *Volume:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -410,7 +423,7 @@ Untranslated: 9 messages, 65 words
 
 Translated: 81 messages, 1394 words
 
-Untranslated: 246 messages, 3009 words
+Untranslated: 247 messages, 3019 words
 
 * *GO!*
 * *Copy*
@@ -438,7 +451,7 @@ Untranslated: 246 messages, 3009 words
 
 Translated: 320 messages, 4390 words
 
-Untranslated: 13 messages, 69 words
+Untranslated: 14 messages, 79 words
 
 * *Font:*
 * *Layout*
@@ -448,6 +461,7 @@ Untranslated: 13 messages, 69 words
 * *Volume:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -458,10 +472,11 @@ Untranslated: 13 messages, 69 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -472,7 +487,7 @@ Untranslated: 7 messages, 63 words
 
 Translated: 131 messages, 949 words
 
-Untranslated: 201 messages, 3490 words
+Untranslated: 202 messages, 3500 words
 
 * *Copy*
 * *Done*
@@ -498,12 +513,13 @@ Untranslated: 201 messages, 3490 words
 
 # Lithuanian
 
-Translated: 284 messages, 2748 words
+Translated: 292 messages, 3057 words
 
-Untranslated: 47 messages, 1682 words
+Untranslated: 40 messages, 1383 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *Accuracy Streaks*
@@ -512,23 +528,22 @@ Untranslated: 47 messages, 1682 words
 * *Practice numbers only.*
 * *voornaam.naam (bv. emma.peeters)*
 * *The difference from the average value.*
-* *Sort letters in the order of keyboard keys*
 * *Download all your typing data in JSON format.*
-* *Help us translate keybr.com into your language.*
 * *The detailed statistics regarding your learning progress.*
 * *Permanently delete all of your typing data and reset statist...*
 * *This is a histogram of the accuracies of all users, and your...*
 * *Adjust the number of words in the lesson text. Making lesson...*
 * *Show color coding of the keyboard zones. Use this option to ...*
-* *<p>Log in met je naam om je voortgang te bewaren. Je gegeven...*
 * *Are you sure you want to delete all data and reset your prof...*
+* *You don’t have any accuracy streaks. Consider completing a l...*
+* *Highlight a key that must to be pressed next. Use this optio...*
 * ...
 
 # Mongolian
 
 Translated: 8 messages, 143 words
 
-Untranslated: 316 messages, 4220 words
+Untranslated: 317 messages, 4230 words
 
 * *GO!*
 * *Copy*
@@ -554,40 +569,41 @@ Untranslated: 316 messages, 4220 words
 
 # Norwegian Bokmål
 
-Translated: 144 messages, 1990 words
+Translated: 198 messages, 2115 words
 
-Untranslated: 184 messages, 2416 words
+Untranslated: 132 messages, 2303 words
 
 * *Done*
 * *Help*
-* *Time*
 * *Books*
 * *Font:*
-* *Reset*
 * *Speed*
-* *Visit*
-* *Zones:*
 * *Account*
-* *Layouts*
-* *Lessons*
-* *Metrics*
-* *Not set*
-* *Options*
-* *Preview*
-* *Profile*
-* *Sign-In*
-* *Syntax:*
-* *Volume:*
+* *Accuracy*
+* *Inloggen*
+* *Inloggen*
+* *klascode*
+* *Settings*
+* *Alphabet:*
+* *Examples:*
+* *All sounds*
+* *Daily goal*
+* *Last speed*
+* *Custom text*
+* *Daily goal:*
+* *Smoothness:*
+* *Whitespace:*
 * ...
 
 # Nepali
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -598,7 +614,7 @@ Untranslated: 7 messages, 63 words
 
 Translated: 320 messages, 4390 words
 
-Untranslated: 13 messages, 69 words
+Untranslated: 14 messages, 79 words
 
 * *Score*
 * *Zones:*
@@ -607,6 +623,7 @@ Untranslated: 13 messages, 69 words
 * *Volume:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Multiplayer*
 * *Even geduld...*
 * *Key sounds only*
@@ -618,10 +635,11 @@ Untranslated: 13 messages, 69 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -632,13 +650,14 @@ Untranslated: 7 messages, 63 words
 
 Translated: 324 messages, 4395 words
 
-Untranslated: 10 messages, 66 words
+Untranslated: 11 messages, 76 words
 
 * *Layout*
 * *Layout:*
 * *Layouts*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -647,9 +666,9 @@ Untranslated: 10 messages, 66 words
 
 # European Portuguese
 
-Translated: 304 messages, 4249 words
+Translated: 305 messages, 4270 words
 
-Untranslated: 28 messages, 190 words
+Untranslated: 28 messages, 179 words
 
 * *Books*
 * *Layout*
@@ -659,6 +678,7 @@ Untranslated: 28 messages, 190 words
 * *Volume:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Top score!*
 * *Top speed!*
 * *Sound theme:*
@@ -670,14 +690,13 @@ Untranslated: 28 messages, 190 words
 * *Relative Accuracy*
 * *Repeat each word:*
 * *Daily goal reached!*
-* *New letter unlocked!*
 * ...
 
 # Romanian
 
 Translated: 287 messages, 3443 words
 
-Untranslated: 40 messages, 974 words
+Untranslated: 41 messages, 984 words
 
 * *Font:*
 * *Layout*
@@ -687,6 +706,7 @@ Untranslated: 40 messages, 974 words
 * *Layouts*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Translate*
 * *Multiplayer*
 * *Sound theme:*
@@ -698,17 +718,17 @@ Untranslated: 40 messages, 974 words
 * *Relative Accuracy*
 * *Repeat each word:*
 * *Start in {countDown}*
-* *Premium account price:*
 * ...
 
 # Russian
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -719,11 +739,12 @@ Untranslated: 7 messages, 63 words
 
 Translated: 326 messages, 4397 words
 
-Untranslated: 8 messages, 64 words
+Untranslated: 9 messages, 74 words
 
 * *Syntax:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -732,71 +753,45 @@ Untranslated: 8 messages, 64 words
 
 # Slovenian
 
-Translated: 178 messages, 3171 words
+Translated: 327 messages, 4414 words
 
-Untranslated: 155 messages, 1288 words
+Untranslated: 8 messages, 57 words
 
-* *Copy*
-* *Done*
-* *Help*
-* *Next*
-* *Time*
-* *Books*
-* *Close*
 * *Font:*
-* *Reset*
-* *Speed*
-* *Visit*
-* *Typing*
-* *Zones:*
-* *Account*
-* *Layouts*
-* *Lessons*
-* *Lessons*
-* *Metrics*
-* *Not set*
-* *Numbers*
-* ...
+* *Inloggen*
+* *Inloggen*
+* *klascode*
+* *Even geduld...*
+* *Key sounds only*
+* *voornaam.naam (bv. emma.peeters)*
+* *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Albanian
 
-Translated: 29 messages, 336 words
+Translated: 328 messages, 4415 words
 
-Untranslated: 297 messages, 4056 words
+Untranslated: 7 messages, 56 words
 
-* *GO!*
-* *Copy*
-* *Done*
-* *Help*
-* *Next*
-* *Time*
-* *User*
-* *Books*
-* *Close*
-* *Font:*
-* *Reset*
-* *Score*
-* *Speed*
-* *Speed*
-* *Visit*
-* *Errors*
-* *Layout*
-* *Typing*
-* *Zones:*
-* *Account*
-* ...
+* *Inloggen*
+* *Inloggen*
+* *klascode*
+* *Even geduld...*
+* *Key sounds only*
+* *voornaam.naam (bv. emma.peeters)*
+* *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Swedish
 
 Translated: 324 messages, 4395 words
 
-Untranslated: 10 messages, 66 words
+Untranslated: 11 messages, 76 words
 
 * *Layout*
 * *Layout:*
 * *Syntax:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -807,11 +802,12 @@ Untranslated: 10 messages, 66 words
 
 Translated: 315 messages, 4287 words
 
-Untranslated: 17 messages, 152 words
+Untranslated: 18 messages, 162 words
 
 * *Zones:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Sound theme:*
 * *Top accuracy*
 * *Even geduld...*
@@ -831,7 +827,7 @@ Untranslated: 17 messages, 152 words
 
 Translated: 213 messages, 1778 words
 
-Untranslated: 116 messages, 2628 words
+Untranslated: 117 messages, 2638 words
 
 * *Books*
 * *Font:*
@@ -842,6 +838,7 @@ Untranslated: 116 messages, 2628 words
 * *Syntax:*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Alphabet:*
 * *Box cursor*
 * *Line cursor*
@@ -852,17 +849,17 @@ Untranslated: 116 messages, 2628 words
 * *No whitespace*
 * *Smooth cursor*
 * *Bar whitespace*
-* *Emulate layout*
 * ...
 
 # Ukrainian
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -871,40 +868,27 @@ Untranslated: 7 messages, 63 words
 
 # Vietnamese
 
-Translated: 261 messages, 2397 words
+Translated: 328 messages, 4415 words
 
-Untranslated: 70 messages, 2033 words
+Untranslated: 7 messages, 56 words
 
-* *Visit*
-* *Typing*
-* *Zones:*
 * *Inloggen*
 * *Inloggen*
-* *Box cursor*
-* *Line cursor*
-* *Block cursor*
-* *Sound theme:*
-* *Top accuracy*
-* *Unique words*
-* *M|T|W|T|F|S|S*
-* *Smooth cursor*
+* *klascode*
 * *Even geduld...*
-* *Jumping cursor*
 * *Key sounds only*
-* *Average accuracy*
-* *Underline cursor*
-* *Repeat each word:*
-* *Premium account price:*
-* ...
+* *voornaam.naam (bv. emma.peeters)*
+* *Typ je naam in als voornaam.naam (kleine letters, met een pu...*
 
 # Simplified Chinese
 
 Translated: 326 messages, 4391 words
 
-Untranslated: 8 messages, 70 words
+Untranslated: 9 messages, 80 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *M|T|W|T|F|S|S*
 * *Even geduld...*
 * *Key sounds only*
@@ -916,10 +900,11 @@ Untranslated: 8 messages, 70 words
 
 Translated: 327 messages, 4398 words
 
-Untranslated: 7 messages, 63 words
+Untranslated: 8 messages, 73 words
 
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*
@@ -930,11 +915,12 @@ Untranslated: 7 messages, 63 words
 
 Translated: 326 messages, 4397 words
 
-Untranslated: 8 messages, 64 words
+Untranslated: 9 messages, 74 words
 
 * *GO!*
 * *Inloggen*
 * *Inloggen*
+* *klascode*
 * *Even geduld...*
 * *Key sounds only*
 * *voornaam.naam (bv. emma.peeters)*

@@ -18,7 +18,7 @@ test("load sitemap.xml", async () => {
 
   const response = await request
     .GET("/sitemap.xml")
-    .header("X-Forwarded-Host", "www.keybr.com")
+    .header("X-Forwarded-Host", "keybr.bfanatic.be")
     .header("X-Forwarded-Proto", "https")
     .send();
   const body = await response.body.text();
@@ -51,7 +51,7 @@ test("load sitemap.xml", async () => {
 
     const response = await request
       .GET(new URL(url).pathname)
-      .header("X-Forwarded-Host", "www.keybr.com")
+      .header("X-Forwarded-Host", "keybr.bfanatic.be")
       .header("X-Forwarded-Proto", "https")
       .send();
 

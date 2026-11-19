@@ -2,7 +2,6 @@
 
 import { join } from "node:path";
 import { intlTransformer } from "@keybr/scripts/intl-transformer.js";
-import { ManifestPlugin } from "@keybr/scripts/webpack-manifest.js";
 import { ENV } from "@keybr/thirdparties/webpack-env.js";
 import CompressionPlugin from "compression-webpack-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
@@ -10,6 +9,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import TerserPlugin from "terser-webpack-plugin";
 import webpack from "webpack";
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+import { ManifestPlugin } from "./webpack-manifest.js";
 
 const mode = process.env.NODE_ENV || "production";
 
@@ -48,8 +48,8 @@ const rule_ts = () => ({
       options: {
         transpileOnly: true,
         compilerOptions: {
-          target: "es2022",
-          module: "es2022",
+          target: "es2024",
+          module: "esnext",
           moduleResolution: "bundler",
           jsx: mode === "development" ? "react-jsxdev" : "react-jsx",
         },
@@ -126,7 +126,7 @@ export default [
         },
         {
           test: /\/knex\/lib\/dialects\//,
-          exclude: /\/mysql|sqlite3|better-sqlite3\//,
+          exclude: /\/mysql|sqlite3\//,
           use: "null-loader",
         },
         {
@@ -137,7 +137,6 @@ export default [
     },
     externals: {
       "sqlite3": "commonjs sqlite3",
-      "better-sqlite3": "commonjs better-sqlite3",
       "bufferutil": "commonjs bufferutil",
       "utf-8-validate": "commonjs utf-8-validate",
     },

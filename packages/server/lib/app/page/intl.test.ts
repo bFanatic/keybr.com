@@ -27,13 +27,13 @@ test("negotiate the preferred language", async () => {
 
   // Assert.
 
-  equal(await call(null), "en");
-  equal(await call(new AcceptLanguage("*")), "en");
-  equal(await call(new AcceptLanguage("xx")), "en");
+  equal(await call(null), "nl"); // fork: standaard nl, geen Engels
+  equal(await call(new AcceptLanguage("*")), "nl");
+  equal(await call(new AcceptLanguage("xx")), "nl");
 
-  equal(await call(new AcceptLanguage("en")), "en");
-  equal(await call(new AcceptLanguage("en-US")), "en");
-  equal(await call(new AcceptLanguage("en-CA")), "en");
+  equal(await call(new AcceptLanguage("en")), "nl");
+  equal(await call(new AcceptLanguage("en-US")), "nl");
+  equal(await call(new AcceptLanguage("en-CA")), "nl");
 
   equal(await call(new AcceptLanguage("pt")), "pt-br");
   equal(await call(new AcceptLanguage("pt-BR")), "pt-br");

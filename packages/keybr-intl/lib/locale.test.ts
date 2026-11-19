@@ -7,11 +7,11 @@ test("select locale", () => {
     (...found: string[]) =>
     (...locales: string[]) =>
       locales.find((locale) => found.includes(locale)) ?? null;
-  equal(selectLocale(filter()), "en");
-  equal(selectLocale(filter("xx")), "en");
-  equal(selectLocale(filter("en")), "en");
-  equal(selectLocale(filter("en-US")), "en");
-  equal(selectLocale(filter("en-CA")), "en");
+  equal(selectLocale(filter()), "nl"); // standaardtaal van de fork
+  equal(selectLocale(filter("xx")), "nl");
+  equal(selectLocale(filter("en")), "nl"); // fork: geen Engels, ook Engelse browsers krijgen nl
+  equal(selectLocale(filter("en-US")), "nl");
+  equal(selectLocale(filter("en-CA")), "nl");
   equal(selectLocale(filter("pt")), "pt-br");
   equal(selectLocale(filter("pt-BR")), "pt-br");
   equal(selectLocale(filter("pt-PT")), "pt-pt");

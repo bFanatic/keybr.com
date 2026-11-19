@@ -28,7 +28,7 @@ test("render sign-in fragment", () => {
   );
 
   isNotNull(r.queryByText("Anonymous User", { exact: false }));
-  isNull(r.queryByText("You are using an account", { exact: false }));
+  isNull(r.queryByText("Je bent ingelogd", { exact: false }));
 
   r.unmount();
 });
@@ -73,7 +73,7 @@ test("render account fragment", () => {
   );
 
   isNull(r.queryByText("Anonymous User", { exact: false }));
-  isNotNull(r.queryByText("You are using an account", { exact: false }));
+  isNotNull(r.queryByText("Je bent ingelogd", { exact: false }));
 
   r.unmount();
 });

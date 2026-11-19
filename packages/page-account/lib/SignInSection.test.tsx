@@ -1,30 +1,53 @@
 import { test } from "node:test";
 import { FakeIntlProvider } from "@keybr/intl";
-import { render } from "@testing-library/react";
-import { isNotNull } from "rich-assert";
+import { fireEvent, render } from "@testing-library/react";
+import { deepEqual, isNotNull, isNull } from "rich-assert";
 import { type SignInActions } from "./actions.ts";
 import { SignInSection } from "./SignInSection.tsx";
 
-test("render", () => {
+test("render: alleen eenvoudige login met naam en klascode", () => {
   const r = render(
     <FakeIntlProvider>
       <SignInSection actions={{} as SignInActions} />
     </FakeIntlProvider>,
   );
 
-  isNotNull(
-    r.queryByText("Simple sign-in that does not use passwords.", {
-      exact: false,
-    }),
+  isNotNull(r.queryByPlaceholderText("voornaam.naam", { exact: false }));
+  isNotNull(r.queryByPlaceholderText("klascode"));
+  isNull(r.queryByText("Google", { exact: false }));
+  isNull(r.queryByText("Microsoft", { exact: false }));
+  isNull(r.queryByText("Facebook", { exact: false }));
+
+  r.unmount();
+});
+
+test("inloggen stuurt naam en klascode door", async () => {
+  const calls: string[][] = [];
+  const r = render(
+    <FakeIntlProvider>
+      <SignInSection
+        actions={
+          {
+            loginSimple: (username: string, code: string) => {
+              calls.push([username, code]);
+              return new Promise(() => {}); // blijft "Even geduld..."
+            },
+          } as unknown as SignInActions
+        }
+      />
+    </FakeIntlProvider>,
   );
-  isNotNull(
-    r.queryByText("Sign-in with your preferred social network.", {
-      exact: false,
-    }),
-  );
-  isNotNull(r.queryByText("Google", { exact: false }));
-  isNotNull(r.queryByText("Microsoft", { exact: false }));
-  isNotNull(r.queryByText("Facebook", { exact: false }));
+
+  fireEvent.change(r.getByPlaceholderText("voornaam.naam", { exact: false }), {
+    target: { value: " emma.peeters " },
+  });
+  fireEvent.change(r.getByPlaceholderText("klascode"), {
+    target: { value: " wafel42 " },
+  });
+  fireEvent.click(r.getByRole("button"));
+
+  await r.findByText("Even geduld", { exact: false });
+  deepEqual(calls, [["emma.peeters", "wafel42"]]);
 
   r.unmount();
 });
